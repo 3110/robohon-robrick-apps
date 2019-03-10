@@ -1,0 +1,2040 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="EF33~xZjj|9eLcoql[ya">_リスト</variable>
+    <variable type="" id="x3=P;:BSy+`-IYXK=,qh">_文字列</variable>
+    <variable type="" id="=UyKl*nRS?E4*~0bit#k">_文字</variable>
+    <variable type="" id="?x|/#R9ec,|S?v+Ym|-@">_開始</variable>
+    <variable type="" id="YD/[W~W(}T~?xTyxT_PE">_終了</variable>
+    <variable type="" id="*GORl!q4;*K^wy^Oa8wx">_セパレータ</variable>
+    <variable type="" id="{]Lw35;S7L%B7/;VlX?2">_クイズ名</variable>
+    <variable type="" id="WP.cYQH#.K`X+F8{9(2]">_クイズ一覧</variable>
+    <variable type="" id=".jFCxm7+dP[8d~wvjJd{">_出題数</variable>
+    <variable type="" id="-BJbqIEE@e)+kIaqYYn@">_ランダム出題</variable>
+    <variable type="" id="mrT:HVX%N!396zv:OQ+h">_聞き返す回数</variable>
+    <variable type="" id="@3mywRDmo*rDh_$mO{{-">_問題番号</variable>
+    <variable type="" id="O0f[K]Af;sEqk+R-$ISt">_質問</variable>
+    <variable type="" id="[J{?!5BTTFie,_n#;R?/">_選択肢</variable>
+    <variable type="" id="Idj%@5,P/Gq)`Ya?zo`q">バージョン</variable>
+    <variable type="" id="AC`L[?e,DSy#%VyM?zE8">_リストの長さ</variable>
+    <variable type="" id="u3_hG?^XreWXKg3Ml4BZ">_符号</variable>
+    <variable type="" id="SmiQMXuBNj6O3vi2{O_s">_選択肢の数</variable>
+    <variable type="" id="|{+Ct`W-JO^hJTQrYDY;">クイズ名</variable>
+    <variable type="" id=":q)d.68f]TK-F!x:K:EA">i</variable>
+    <variable type="" id="x%@*5hv7[$%7s`5(29aG">_数値</variable>
+    <variable type="" id=")ixLUf@6D2r$4tpD:x*?">_正解</variable>
+    <variable type="" id="?rM2{g_s*KdX=M}Y`}5-">_答え</variable>
+    <variable type="" id="8cAg4U?G+9n0E862Ok?.">_正解番号</variable>
+    <variable type="" id="5sVTTaxad/L3LS8.rEnT">クイズ一覧</variable>
+    <variable type="" id="2QBi%:C@BQ+o~~uT1XN6">_要素</variable>
+    <variable type="" id="jZpk3*8+a=y-7{eu|5HQ">出題数</variable>
+    <variable type="" id="#r%FWX#5b3(!=,WmD6mp">_位置</variable>
+    <variable type="" id="n=$PN8R8nQ2,/uUgo,=E">_答え方メッセージ</variable>
+    <variable type="" id="N`:ANA]byK,djnpgW4?R">ランダムに出題する</variable>
+    <variable type="" id="_j6Uah2w`$,?qT!ch*ej">聞き返す回数</variable>
+    <variable type="" id=":]}#0}+.1#@eE!58R,]*">_正解数</variable>
+    <variable type="" id="TgRFqH[ipLT/MQ9F_08R">_クイズ終了</variable>
+    <variable type="" id="mK@Pf?#}f,LfK-bUVv)m">_数字</variable>
+    <variable type="" id="IkU#}Tfjn}83L(:APt1R">_問題数</variable>
+    <variable type="" id="]cIqHNYlH~Ie4:v`YOua">_クイズ</variable>
+    <variable type="" id="?luMic1LmKF9]fc:U@b@">_聞き返した回数</variable>
+    <variable type="" id="{7?j75Xe5$.CLvvCN4t)">_聞こえた言葉</variable>
+  </variables>
+  <block type="robohon_startBlocks" id="_4C[c!AsfNQM}FnKJ0G#" x="-3712" y="-5237">
+    <next>
+      <block type="variables_set" id="=KrV#{@1%n^u6Y7wH0.=">
+        <field name="VAR" id="Idj%@5,P/Gq)`Ya?zo`q" variabletype="">バージョン</field>
+        <value name="VALUE">
+          <block type="text" id="sf=G$B-.f];@DcZs?%Yw">
+            <field name="TEXT">0.0.1</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id=")Xtt[w3H#RY|OHAx=^J^">
+            <field name="VAR" id="|{+Ct`W-JO^hJTQrYDY;" variabletype="">クイズ名</field>
+            <value name="VALUE">
+              <block type="text" id="1QOnl:VAd@n?QG#u{Bx_">
+                <field name="TEXT">ロボホン</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="-)[:oAs1/YC|.S0~*XnA">
+                <field name="VAR" id="5sVTTaxad/L3LS8.rEnT" variabletype="">クイズ一覧</field>
+                <value name="VALUE">
+                  <block type="procedures_callreturn" id="|wjJ`_n,c$l1H21GWcJ=">
+                    <mutation name="クイズ一覧取得"></mutation>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="iV)DwRVtl_+oKBMJoCQh">
+                    <field name="VAR" id="jZpk3*8+a=y-7{eu|5HQ" variabletype="">出題数</field>
+                    <value name="VALUE">
+                      <block type="math_number" id="tuKq.](^L8B40q5D^/c.">
+                        <field name="NUM">3</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="g7Cf%Z;3s*T4Sp|r4MSO" disabled="true">
+                        <field name="VAR" id="jZpk3*8+a=y-7{eu|5HQ" variabletype="">出題数</field>
+                        <comment pinned="false" h="80" w="160">全問出題する場合はこちらを有効にする</comment>
+                        <value name="VALUE">
+                          <block type="lists_length" id="~~[YbrsNi1CP1,#!rj2`">
+                            <value name="VALUE">
+                              <block type="variables_get" id="N+H,d)ml{~([mHqW8ljY">
+                                <field name="VAR" id="5sVTTaxad/L3LS8.rEnT" variabletype="">クイズ一覧</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="9*.RdqC/m4vK8g/P6w5;">
+                            <field name="VAR" id="N`:ANA]byK,djnpgW4?R" variabletype="">ランダムに出題する</field>
+                            <value name="VALUE">
+                              <block type="logic_boolean" id="08#h1{[l+`Rz;BOT[||_">
+                                <field name="BOOL">TRUE</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="variables_set" id="aMR@cgUeL,4hGswd~tGB">
+                                <field name="VAR" id="_j6Uah2w`$,?qT!ch*ej" variabletype="">聞き返す回数</field>
+                                <value name="VALUE">
+                                  <block type="math_number" id="v/OFo7*MDtHP?N%*VOmX">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="variables_set" id="#(20wI^]`8T#xAcm$IR{">
+                                    <field name="VAR" id="TgRFqH[ipLT/MQ9F_08R" variabletype="">_クイズ終了</field>
+                                    <value name="VALUE">
+                                      <block type="logic_boolean" id="$7!W;H]am1LGR!R`0]Xj">
+                                        <field name="BOOL">FALSE</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="controls_whileUntil" id="jeG+4Sg(GoGWKQZnZaG_" collapsed="true">
+                                        <field name="MODE">UNTIL</field>
+                                        <value name="BOOL">
+                                          <block type="variables_get" id="AOI{-|.YT695Ln}d6[2S">
+                                            <field name="VAR" id="TgRFqH[ipLT/MQ9F_08R" variabletype="">_クイズ終了</field>
+                                          </block>
+                                        </value>
+                                        <statement name="DO">
+                                          <block type="procedures_callnoreturn" id="gX+N#{dzOvN]XP815:q%">
+                                            <mutation name="出題">
+                                              <arg name="_クイズ名"></arg>
+                                              <arg name="_クイズ一覧"></arg>
+                                              <arg name="_出題数"></arg>
+                                              <arg name="_ランダム出題"></arg>
+                                              <arg name="_聞き返す回数"></arg>
+                                            </mutation>
+                                            <value name="ARG0">
+                                              <block type="variables_get" id="@$9e^,C^h^pQKYU(4[Xn">
+                                                <field name="VAR" id="|{+Ct`W-JO^hJTQrYDY;" variabletype="">クイズ名</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG1">
+                                              <block type="variables_get" id="3Nbu;Amz;0DSjfsr9)f6">
+                                                <field name="VAR" id="5sVTTaxad/L3LS8.rEnT" variabletype="">クイズ一覧</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG2">
+                                              <block type="variables_get" id="n/W7ovYSZCiICPiqT{AI">
+                                                <field name="VAR" id="jZpk3*8+a=y-7{eu|5HQ" variabletype="">出題数</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG3">
+                                              <block type="variables_get" id="yO]96qgZ35U{N`V/AwUB">
+                                                <field name="VAR" id="N`:ANA]byK,djnpgW4?R" variabletype="">ランダムに出題する</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG4">
+                                              <block type="variables_get" id="Ebc]6yPzepss__/#;,e`">
+                                                <field name="VAR" id="_j6Uah2w`$,?qT!ch*ej" variabletype="">聞き返す回数</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="robohon_binary_tree_local" id=".:j_m-EKXs$jh,vH{X~1">
+                                                <statement name="QUESTION">
+                                                  <block type="robohon_speak" id="j!4*S$6=?(qC$UE=Hz]!">
+                                                    <value name="WORD">
+                                                      <shadow type="text" id="/AG+Wx!WtGbA{fq@w0:R">
+                                                        <field name="TEXT">もう一度挑戦する？挑戦するなら，ハイ。クイズを終了するなら，いいえ，と答えてね</field>
+                                                      </shadow>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                                <statement name="YES">
+                                                  <block type="robohon_speak" id="n(uOCnW.tO.Vw6g4=+(i">
+                                                    <value name="WORD">
+                                                      <shadow type="text" id="ab!{L=E(^R.O8qkeD*]W">
+                                                        <field name="TEXT">オッケー，頑張ってね！</field>
+                                                      </shadow>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                                <statement name="NO">
+                                                  <block type="robohon_speak" id=";bkuqtbSxT6,*-u0G|;^">
+                                                    <value name="WORD">
+                                                      <shadow type="text" id="|yVr^7n5:di+mekeU*[#">
+                                                        <field name="TEXT">ユニアデックスクイズを終わるね。バイバーイ</field>
+                                                      </shadow>
+                                                      <block type="text_join" id="V|FBC=q$@%1^}pY:D5Ap">
+                                                        <mutation items="2"></mutation>
+                                                        <value name="ADD0">
+                                                          <block type="variables_get" id="%ltG;(7M!JTo{mpEDowh">
+                                                            <field name="VAR" id="|{+Ct`W-JO^hJTQrYDY;" variabletype="">クイズ名</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ADD1">
+                                                          <block type="text" id="R@QLG7i_aXSiL$G;T$I0">
+                                                            <field name="TEXT">クイズを終わるね。バイバーイ</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="variables_set" id=",-:K3XQM~=Sqx1FB)}N?">
+                                                        <field name="VAR" id="TgRFqH[ipLT/MQ9F_08R" variabletype="">_クイズ終了</field>
+                                                        <value name="VALUE">
+                                                          <block type="logic_boolean" id="ezh$|{Q,:]f5RxNwRy7d">
+                                                            <field name="BOOL">TRUE</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </statement>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </statement>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="procedures_defreturn" id="`QQqIkZrFIY3@tf.8#.=" collapsed="true" x="-3213" y="-5213">
+    <mutation>
+      <arg name="_リスト" varid="EF33~xZjj|9eLcoql[ya"></arg>
+    </mutation>
+    <field name="NAME">リストのシャッフル</field>
+    <comment pinned="false" h="80" w="160">この関数の説明…</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="5;l{|XlNAu9lt6j.C3V_">
+        <field name="VAR" id="AC`L[?e,DSy#%VyM?zE8" variabletype="">_リストの長さ</field>
+        <value name="VALUE">
+          <block type="lists_length" id="lxTU[X!wFKg!_ichny=W">
+            <value name="VALUE">
+              <block type="variables_get" id="!1kVc[3cfbdS]8Xj2!rH">
+                <field name="VAR" id="EF33~xZjj|9eLcoql[ya" variabletype="">_リスト</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_for" id="Cv;4h?vMoDH3JlNgnnU;">
+            <field name="VAR" id=":q)d.68f]TK-F!x:K:EA" variabletype="">i</field>
+            <value name="FROM">
+              <shadow type="math_number" id="6b0r8@Zrn}_f^l+w$4^$">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <value name="TO">
+              <shadow type="math_number" id="uI*ag#|){[BXJq/E*S5e">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="M:,A@0t7_2mVYBq;I;cZ">
+                <field name="VAR" id="AC`L[?e,DSy#%VyM?zE8" variabletype="">_リストの長さ</field>
+              </block>
+            </value>
+            <value name="BY">
+              <shadow type="math_number" id="%k-sIAk6Cm$ulrx|Okyp">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <statement name="DO">
+              <block type="variables_set" id="sIV#f$7xwP?2-e.lP(mw">
+                <field name="VAR" id="2QBi%:C@BQ+o~~uT1XN6" variabletype="">_要素</field>
+                <value name="VALUE">
+                  <block type="lists_getIndex" id="otsI,bJ^h[QR3?kbF2=n">
+                    <mutation statement="false" at="true"></mutation>
+                    <field name="MODE">GET_REMOVE</field>
+                    <field name="WHERE">FROM_START</field>
+                    <value name="VALUE">
+                      <block type="variables_get" id="=nAk`86.o;)1)sLtj8{9">
+                        <field name="VAR" id="EF33~xZjj|9eLcoql[ya" variabletype="">_リスト</field>
+                      </block>
+                    </value>
+                    <value name="AT">
+                      <block type="variables_get" id="JzZ3j{x!UIG2S9LjK!ZM">
+                        <field name="VAR" id=":q)d.68f]TK-F!x:K:EA" variabletype="">i</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="lists_setIndex" id="ibDv~JT4c50~$n,r?3=,">
+                    <mutation at="false"></mutation>
+                    <field name="MODE">INSERT</field>
+                    <field name="WHERE">RANDOM</field>
+                    <value name="LIST">
+                      <block type="variables_get" id="~MeA.x*ZsD6#BHXqHuHP">
+                        <field name="VAR" id="EF33~xZjj|9eLcoql[ya" variabletype="">_リスト</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block type="variables_get" id="oT]oM=PqFtiqj*~0JWz0">
+                        <field name="VAR" id="2QBi%:C@BQ+o~~uT1XN6" variabletype="">_要素</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="variables_get" id="%,8)K3!A-T9#p!_KndW,">
+        <field name="VAR" id="EF33~xZjj|9eLcoql[ya" variabletype="">_リスト</field>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="+vNBqtuQnbi8QB6d#0))" collapsed="true" x="-3213" y="-5188">
+    <mutation>
+      <arg name="_文字列" varid="x3=P;:BSy+`-IYXK=,qh"></arg>
+    </mutation>
+    <field name="NAME">文字列を数値に変換</field>
+    <comment pinned="false" h="80" w="160">この関数の説明…</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="~#+}eYc.cy{6XCh%Xfes">
+        <field name="VAR" id="u3_hG?^XreWXKg3Ml4BZ" variabletype="">_符号</field>
+        <value name="VALUE">
+          <block type="math_number" id="qR#qDI1J~xq/{0Vw@tQA">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="~dqq,Svx%lP[+xl{+D4p">
+            <value name="IF0">
+              <block type="logic_compare" id="#{;GK%$*-tBn3P2t]yWt">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="text_charAt" id="k)r{G0.2C55v6eIZ~Db%">
+                    <mutation at="false"></mutation>
+                    <field name="WHERE">FIRST</field>
+                    <value name="VALUE">
+                      <shadow type="text" id="=ZU.-T7;zcNZkdSrtjP4">
+                        <field name="TEXT">こんにちは</field>
+                      </shadow>
+                      <block type="variables_get" id="5MPtF-;Ra3TlN`}C8YbY">
+                        <field name="VAR" id="x3=P;:BSy+`-IYXK=,qh" variabletype="">_文字列</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="@t2L.7965e-dN3JR^SMk">
+                    <field name="TEXT">-</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="variables_set" id="Z}BO;+Fw2sul7#k^~i10">
+                <field name="VAR" id="u3_hG?^XreWXKg3Ml4BZ" variabletype="">_符号</field>
+                <value name="VALUE">
+                  <block type="math_number" id="L-j`hr.r]TmzRs}J^yTW">
+                    <field name="NUM">-1</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="iDarw$[:-rWGY/Nw^+lD">
+                    <field name="VAR" id="x3=P;:BSy+`-IYXK=,qh" variabletype="">_文字列</field>
+                    <value name="VALUE">
+                      <block type="text_getSubstring" id="(V=C!S/]-DJeUEq)1UOr">
+                        <mutation at1="true" at2="false"></mutation>
+                        <field name="WHERE1">FROM_START</field>
+                        <field name="WHERE2">LAST</field>
+                        <value name="STRING">
+                          <shadow type="text" id="?E}M%HD8}%14#7s-!?NV">
+                            <field name="TEXT">こんにちは</field>
+                          </shadow>
+                          <block type="variables_get" id="0)MeNaW?yqf3^gs}CUOz">
+                            <field name="VAR" id="x3=P;:BSy+`-IYXK=,qh" variabletype="">_文字列</field>
+                          </block>
+                        </value>
+                        <value name="AT1">
+                          <block type="math_number" id="Vve!L=hY-d,R)]zZzVVZ">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="variables_set" id="7%A+E%w(e%kXCdF30cR6">
+                <field name="VAR" id="x%@*5hv7[$%7s`5(29aG" variabletype="">_数値</field>
+                <value name="VALUE">
+                  <block type="math_number" id="^VK%y.Vk{[U!A8j)l3s:">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_for" id="y~x$gUEWH9h/Y%1%VpHx">
+                    <field name="VAR" id="#r%FWX#5b3(!=,WmD6mp" variabletype="">_位置</field>
+                    <value name="FROM">
+                      <shadow type="math_number" id="%DV(y1W(9.D7#aqDbB2e">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <value name="TO">
+                      <shadow type="math_number" id="thon(9:C?J1;KYh0!S8s">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="text_length" id="[EmJLyl?bg[U2Vw}#1=D">
+                        <value name="VALUE">
+                          <shadow type="text" id="HMZ1}n,1?)fZakF-,{@R">
+                            <field name="TEXT">こんにちは</field>
+                          </shadow>
+                          <block type="variables_get" id="w.R2%2kbmj|a-tCA_S9r">
+                            <field name="VAR" id="x3=P;:BSy+`-IYXK=,qh" variabletype="">_文字列</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="BY">
+                      <shadow type="math_number" id=";iAp%F^j5MZHL]qTc!+8">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <statement name="DO">
+                      <block type="variables_set" id="QJI.^7O$NDnxD[Jfn/wq">
+                        <field name="VAR" id="=UyKl*nRS?E4*~0bit#k" variabletype="">_文字</field>
+                        <value name="VALUE">
+                          <block type="text_charAt" id="`+v#DnSDAb|e`3}+TEMS">
+                            <mutation at="true"></mutation>
+                            <field name="WHERE">FROM_START</field>
+                            <value name="VALUE">
+                              <shadow type="text" id="(ueM#t1cI|/)/m]7RB$6">
+                                <field name="TEXT">こんにちは</field>
+                              </shadow>
+                              <block type="variables_get" id="V5Si_u#o(D#z`Zfx/#eM">
+                                <field name="VAR" id="x3=P;:BSy+`-IYXK=,qh" variabletype="">_文字列</field>
+                              </block>
+                            </value>
+                            <value name="AT">
+                              <block type="variables_get" id="3?#Uvdrm2Bs??.t0)opq">
+                                <field name="VAR" id="#r%FWX#5b3(!=,WmD6mp" variabletype="">_位置</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="controls_if" id="o@`Gz,U`)T5Nx%kW@C5e">
+                            <value name="IF0">
+                              <block type="logic_compare" id="03l2R^zzW+:NhGF.fKST">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="variables_get" id="X:gX.H$0cpk{]mv2-fb^">
+                                    <field name="VAR" id="=UyKl*nRS?E4*~0bit#k" variabletype="">_文字</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="text" id="`Fz(Lb6AUR:~-7!IFKOc">
+                                    <field name="TEXT">,</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="controls_flow_statements" id="X{l-wGI[2p1oxQl5=3bM">
+                                <field name="FLOW">CONTINUE</field>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="variables_set" id="DcOe{!zG@t3dT`!)4T?q">
+                                <field name="VAR" id="x%@*5hv7[$%7s`5(29aG" variabletype="">_数値</field>
+                                <value name="VALUE">
+                                  <block type="math_arithmetic" id="|;:]ozETvyIJmj#,x`l?">
+                                    <field name="OP">MULTIPLY</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="~zN.?WF~.pci7P+0Yxw|">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="(1B]6)9^m/Hw3Fta)ySZ">
+                                        <field name="VAR" id="x%@*5hv7[$%7s`5(29aG" variabletype="">_数値</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="~$L0@b#M:W-G;p;!f@~|">
+                                        <field name="NUM">10</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="variables_set" id="mTG(fSz:jX5S:;wG+WMP">
+                                    <field name="VAR" id="mK@Pf?#}f,LfK-bUVv)m" variabletype="">_数字</field>
+                                    <value name="VALUE">
+                                      <block type="procedures_callreturn" id="OKFu*XlXa-}qK[}OIi!@">
+                                        <mutation name="文字を数字に変換">
+                                          <arg name="_文字"></arg>
+                                        </mutation>
+                                        <value name="ARG0">
+                                          <block type="variables_get" id="w@aV:u.[[M`/MU/G^MB[">
+                                            <field name="VAR" id="=UyKl*nRS?E4*~0bit#k" variabletype="">_文字</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="procedures_ifreturn" id="F%S(?tPBfe)zNM:w1*hW">
+                                        <mutation value="1"></mutation>
+                                        <value name="CONDITION">
+                                          <block type="logic_compare" id="k.fK@)TYuQKaqQ2~Zx|0">
+                                            <field name="OP">EQ</field>
+                                            <value name="A">
+                                              <block type="variables_get" id="fHuNBa~Ey:XAw=Onj~zO">
+                                                <field name="VAR" id="mK@Pf?#}f,LfK-bUVv)m" variabletype="">_数字</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="g7[B2%R7)k#YN-%bQOl5">
+                                                <field name="NUM">-1</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE">
+                                          <block type="math_number" id="AY$(E6M-9ui;h5zq]Suz">
+                                            <field name="NUM">-1</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="variables_set" id="T,UH.2x]H8d_j7wbMjlX">
+                                            <field name="VAR" id="x%@*5hv7[$%7s`5(29aG" variabletype="">_数値</field>
+                                            <value name="VALUE">
+                                              <block type="math_arithmetic" id="7Z?:WR[{yj]ANJRZFNn?">
+                                                <field name="OP">ADD</field>
+                                                <value name="A">
+                                                  <shadow type="math_number" id="UvExv/RsrUynca.{a|g4">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="variables_get" id="PnEEhft8*IPr`rC*9Yg_">
+                                                    <field name="VAR" id="x%@*5hv7[$%7s`5(29aG" variabletype="">_数値</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <shadow type="math_number" id="AQF?keB2HN;AH5*h8lWb">
+                                                    <field name="NUM">10</field>
+                                                  </shadow>
+                                                  <block type="variables_get" id="~zD~TQ13I76A(462SP|f">
+                                                    <field name="VAR" id="mK@Pf?#}f,LfK-bUVv)m" variabletype="">_数字</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="math_arithmetic" id="3zOEy4,0Db;aL]BhyN3u">
+        <field name="OP">MULTIPLY</field>
+        <value name="A">
+          <shadow type="math_number" id="!mDu@oiXr@X8p.2.Hv/k">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="variables_get" id="G$cyGIV+?g,,`mR,;pfB">
+            <field name="VAR" id="x%@*5hv7[$%7s`5(29aG" variabletype="">_数値</field>
+          </block>
+        </value>
+        <value name="B">
+          <shadow type="math_number" id="Y.$5_r[tQkyg0|o7dmoV">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="variables_get" id="Yjs`KzS:=qjz+Ob=#8ci">
+            <field name="VAR" id="u3_hG?^XreWXKg3Ml4BZ" variabletype="">_符号</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="3[{78ivefLIe1Uo`HFOm" collapsed="true" x="-3212" y="-5162">
+    <mutation statements="false">
+      <arg name="_文字" varid="=UyKl*nRS?E4*~0bit#k"></arg>
+    </mutation>
+    <field name="NAME">文字を数字に変換</field>
+    <comment pinned="false" h="80" w="160">この関数の説明…</comment>
+    <value name="RETURN">
+      <block type="math_arithmetic" id="cupG;?:^76TY#Pl4^e59">
+        <field name="OP">MINUS</field>
+        <value name="A">
+          <shadow type="math_number" id="zvh`B3l^OOF4p@Bte0RS">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="text_indexOf" id="J1Fqnye)!Od02VNxX`Q6">
+            <field name="END">FIRST</field>
+            <value name="VALUE">
+              <shadow type="text" id="Oyg^h9,jJPn#|LM]^oc@">
+                <field name="TEXT">0123456789</field>
+              </shadow>
+            </value>
+            <value name="FIND">
+              <shadow type="text" id="2q,~^XE4z,x7-a6BHN=i">
+                <field name="TEXT">ん</field>
+              </shadow>
+              <block type="variables_get" id="[n^(m_SeG!ze]#E;pHu3">
+                <field name="VAR" id="=UyKl*nRS?E4*~0bit#k" variabletype="">_文字</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="B">
+          <shadow type="math_number" id="%U*{Q7NG)Hh/I/azm{dD">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="D7=qL0~ID)=v)T_`pYZu" collapsed="true" x="-3213" y="-5138">
+    <mutation>
+      <arg name="_開始" varid="?x|/#R9ec,|S?v+Ym|-@"></arg>
+      <arg name="_終了" varid="YD/[W~W(}T~?xTyxT_PE"></arg>
+      <arg name="_セパレータ" varid="*GORl!q4;*K^wy^Oa8wx"></arg>
+    </mutation>
+    <field name="NAME">数値の範囲を文字列に変換</field>
+    <comment pinned="false" h="80" w="160">この関数の説明…</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="%;i8FSiiKo(]/ehe2}Re">
+        <field name="VAR" id="x3=P;:BSy+`-IYXK=,qh" variabletype="">_文字列</field>
+        <value name="VALUE">
+          <block type="text_join" id="vC[ejtW;6Q!|OM~Uf1Mv">
+            <mutation items="1"></mutation>
+            <value name="ADD0">
+              <block type="variables_get" id=":t#bK`ak:n2S$;_Qt;:H">
+                <field name="VAR" id="?x|/#R9ec,|S?v+Ym|-@" variabletype="">_開始</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_for" id="ix_UT3[dnEnt9.rY4XOr">
+            <field name="VAR" id=":q)d.68f]TK-F!x:K:EA" variabletype="">i</field>
+            <value name="FROM">
+              <shadow type="math_number" id="N*S,o@s)EP4$p,djn%C_">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="math_arithmetic" id="2Jh|b}}=qp9XyWXh5NT3">
+                <field name="OP">ADD</field>
+                <value name="A">
+                  <shadow type="math_number" id="*DA`DKHCJ|!OKhG%!_/K">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="bTui4pXRNww?@#sW.7C2">
+                    <field name="VAR" id="?x|/#R9ec,|S?v+Ym|-@" variabletype="">_開始</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="Gk*YNX%18nwU?I^]dDaF">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <value name="TO">
+              <shadow type="math_number" id="cH#bzH*qfgD*1Gn#xLLP">
+                <field name="NUM">10</field>
+              </shadow>
+              <block type="variables_get" id="6r.VAJ]?cV-nC0lAQ_Tj">
+                <field name="VAR" id="YD/[W~W(}T~?xTyxT_PE" variabletype="">_終了</field>
+              </block>
+            </value>
+            <value name="BY">
+              <shadow type="math_number" id=":~$.(/;-^!cXS)Z9FS,~">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <statement name="DO">
+              <block type="text_append" id="/]+leK.?#8,Fz:ZKmZtF">
+                <field name="VAR" id="x3=P;:BSy+`-IYXK=,qh" variabletype="">_文字列</field>
+                <value name="TEXT">
+                  <shadow type="text" id="z0KX6e,2#-_[f229GiNz">
+                    <field name="TEXT"></field>
+                  </shadow>
+                  <block type="text_join" id="4-NDBhR:m5:4]HOWtbF9">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="variables_get" id=":{`0|Hb)`%P{OMN.Oy@V">
+                        <field name="VAR" id="*GORl!q4;*K^wy^Oa8wx" variabletype="">_セパレータ</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="variables_get" id="oN1Y7!?d4q1cH!bd)~u0">
+                        <field name="VAR" id=":q)d.68f]TK-F!x:K:EA" variabletype="">i</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="variables_get" id="E-nI}nCe%Cc+~.#ckgGC">
+        <field name="VAR" id="x3=P;:BSy+`-IYXK=,qh" variabletype="">_文字列</field>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defnoreturn" id="JMO6/sk|8h:z]DN={pHj" collapsed="true" x="-3212" y="-5113">
+    <mutation>
+      <arg name="_クイズ名" varid="{]Lw35;S7L%B7/;VlX?2"></arg>
+      <arg name="_クイズ一覧" varid="WP.cYQH#.K`X+F8{9(2]"></arg>
+      <arg name="_出題数" varid=".jFCxm7+dP[8d~wvjJd{"></arg>
+      <arg name="_ランダム出題" varid="-BJbqIEE@e)+kIaqYYn@"></arg>
+      <arg name="_聞き返す回数" varid="mrT:HVX%N!396zv:OQ+h"></arg>
+    </mutation>
+    <field name="NAME">出題</field>
+    <comment pinned="false" h="80" w="160">この関数の説明…</comment>
+    <statement name="STACK">
+      <block type="robohon_changetts" id="@04=-MUHR3+R?6]$jYlg">
+        <field name="LANGUAGE">日本語</field>
+        <next>
+          <block type="robohon_speak" id="OB3|%9]acuQC6L`^)U9P">
+            <value name="WORD">
+              <shadow type="text" id="gDv@OhLp~h0p_|jmwv{G">
+                <field name="TEXT">ユニアデックスクイズを始めるよ。</field>
+              </shadow>
+              <block type="text_join" id="w.3`dv?8nW.UjqP?nGs8">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="variables_get" id="K2,p4+`;5,X?`EhUwhk_">
+                    <field name="VAR" id="{]Lw35;S7L%B7/;VlX?2" variabletype="">_クイズ名</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="6a{.ozfmUYadInKSbJC=">
+                    <field name="TEXT">クイズを始めるよ</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="robohon_speak" id="2*P(5Gt?mayO~)tixyxM">
+                <value name="WORD">
+                  <shadow type="text" id=".,FZ4`{TL0:i-@+}l{Ex">
+                    <field name="TEXT">みんなはどれくらいユニアデックスのことを知っているかな？</field>
+                  </shadow>
+                  <block type="text_join" id="dHZy8TSZFUd1h|v}/ubt">
+                    <mutation items="3"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="^e@ol]4*aSIu:Hu?$QFu">
+                        <field name="TEXT">みんなはどれくらい</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="variables_get" id="MG9A9[69tXt%6SKw.yp|">
+                        <field name="VAR" id="{]Lw35;S7L%B7/;VlX?2" variabletype="">_クイズ名</field>
+                      </block>
+                    </value>
+                    <value name="ADD2">
+                      <block type="text" id="?D_QN@zhKpl_v?lZIlwz">
+                        <field name="TEXT">のことを知っているかな？</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="robohon_speak" id="aX@yX1G:v.)4^aw4E=3{">
+                    <value name="WORD">
+                      <shadow type="text" id=":45EKXV`]2MNW5?v3$}$">
+                        <field name="TEXT">では，クイズ開始</field>
+                      </shadow>
+                      <block type="text_join" id="Hns%4jY8/~E%Tbb97KI-">
+                        <mutation items="3"></mutation>
+                        <value name="ADD0">
+                          <block type="text" id="tj$/1EbpZ}yjN3-uh@K]">
+                            <field name="TEXT">全部で</field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="variables_get" id="[w|^E@zLPv8W41iYxFd5">
+                            <field name="VAR" id=".jFCxm7+dP[8d~wvjJd{" variabletype="">_出題数</field>
+                          </block>
+                        </value>
+                        <value name="ADD2">
+                          <block type="text" id="2Mo)hF_7F7{7ZSA=VOCh">
+                            <field name="TEXT">問あるよ</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="robohon_speak" id="u{I}WFa3E@R|a}q/v!R[">
+                        <value name="WORD">
+                          <shadow type="text" id="nj1j93gQdfM^LAKD=?Yv">
+                            <field name="TEXT">準備はいいかな？</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="robohon_speak" id="RAN3Ykg@+w~$$,Ck_QGJ">
+                            <value name="WORD">
+                              <shadow type="text" id=";Q}G:QUV.?W!h_U}(TyD">
+                                <field name="TEXT">じゃあ，クイズ開始</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="variables_set" id="cA#93MU^2,!ckIr2i-h^">
+                                <field name="VAR" id=":]}#0}+.1#@eE!58R,]*" variabletype="">_正解数</field>
+                                <value name="VALUE">
+                                  <block type="math_number" id="KO8c?Tc`^7gXD]=PBcrR">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="variables_set" id="w(bWm8vCWK/UOs;hAfGt">
+                                    <field name="VAR" id="IkU#}Tfjn}83L(:APt1R" variabletype="">_問題数</field>
+                                    <value name="VALUE">
+                                      <block type="math_number" id="5Fk;#VIHYG#V8-cYnqHp">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="controls_whileUntil" id="~/-o[x_R6.G-W#+|C//.">
+                                        <field name="MODE">WHILE</field>
+                                        <value name="BOOL">
+                                          <block type="logic_compare" id="zho_tboC}cH(}{Gg]%xb">
+                                            <field name="OP">LT</field>
+                                            <value name="A">
+                                              <block type="variables_get" id="%05mYyM)@tgSz7.@|iR+">
+                                                <field name="VAR" id="IkU#}Tfjn}83L(:APt1R" variabletype="">_問題数</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="variables_get" id="TP^@EQrW9:whq|^0_7|j">
+                                                <field name="VAR" id=".jFCxm7+dP[8d~wvjJd{" variabletype="">_出題数</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO">
+                                          <block type="variables_set" id="1R(F*pD5{d#]jFc=d+Lm">
+                                            <field name="VAR" id="]cIqHNYlH~Ie4:v`YOua" variabletype="">_クイズ</field>
+                                            <value name="VALUE">
+                                              <block type="logic_ternary" id="FrJlbNY:FefM|2gSy{Sk">
+                                                <value name="IF">
+                                                  <block type="variables_get" id=")UgnN!)o1v~GokCWEAC[">
+                                                    <field name="VAR" id="-BJbqIEE@e)+kIaqYYn@" variabletype="">_ランダム出題</field>
+                                                  </block>
+                                                </value>
+                                                <value name="THEN">
+                                                  <block type="lists_getIndex" id="t1D~-FLZYf958vLNir_U">
+                                                    <mutation statement="false" at="false"></mutation>
+                                                    <field name="MODE">GET_REMOVE</field>
+                                                    <field name="WHERE">RANDOM</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id="n~`Mg_UO5Bq2vVyJI=Up">
+                                                        <field name="VAR" id="WP.cYQH#.K`X+F8{9(2]" variabletype="">_クイズ一覧</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="ELSE">
+                                                  <block type="lists_getIndex" id="eKKr^2cduRhEX0K!cDf^">
+                                                    <mutation statement="false" at="false"></mutation>
+                                                    <field name="MODE">GET_REMOVE</field>
+                                                    <field name="WHERE">FIRST</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id="vJ$%(|AuETPMwRV6dRfs">
+                                                        <field name="VAR" id="WP.cYQH#.K`X+F8{9(2]" variabletype="">_クイズ一覧</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="math_change" id="].T^P:vA6j88h#4F=/(E">
+                                                <field name="VAR" id="IkU#}Tfjn}83L(:APt1R" variabletype="">_問題数</field>
+                                                <value name="DELTA">
+                                                  <shadow type="math_number" id="HX]oe^EI?aQ1;jG]Pw$:">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                </value>
+                                                <next>
+                                                  <block type="controls_if" id="7Q/Rp`GJ9Q-7`TRCN/53">
+                                                    <value name="IF0">
+                                                      <block type="procedures_callreturn" id="o!kWV,EL]TdgQp8M%vAR">
+                                                        <mutation name="N択クイズ">
+                                                          <arg name="_問題番号"></arg>
+                                                          <arg name="_質問"></arg>
+                                                          <arg name="_選択肢"></arg>
+                                                          <arg name="_聞き返す回数"></arg>
+                                                        </mutation>
+                                                        <value name="ARG0">
+                                                          <block type="variables_get" id="uDAEi[~5M(r.6kM_*KHJ">
+                                                            <field name="VAR" id="IkU#}Tfjn}83L(:APt1R" variabletype="">_問題数</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ARG1">
+                                                          <block type="lists_getIndex" id="%=JcTYrrFHZS1.{RDlFR">
+                                                            <mutation statement="false" at="true"></mutation>
+                                                            <field name="MODE">GET</field>
+                                                            <field name="WHERE">FROM_START</field>
+                                                            <value name="VALUE">
+                                                              <block type="variables_get" id="h.2vjB7[{4aoqVW^wZy.">
+                                                                <field name="VAR" id="]cIqHNYlH~Ie4:v`YOua" variabletype="">_クイズ</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="AT">
+                                                              <block type="math_number" id="%Ku;ad:thm`/R:e(m{@d">
+                                                                <field name="NUM">1</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ARG2">
+                                                          <block type="lists_getIndex" id="!.h?fP#0~c?dP:,.;vMb">
+                                                            <mutation statement="false" at="true"></mutation>
+                                                            <field name="MODE">GET</field>
+                                                            <field name="WHERE">FROM_START</field>
+                                                            <value name="VALUE">
+                                                              <block type="variables_get" id="JfS]xZ,IDlDS?K*)f4s=">
+                                                                <field name="VAR" id="]cIqHNYlH~Ie4:v`YOua" variabletype="">_クイズ</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="AT">
+                                                              <block type="math_number" id="Z22o`vjkevsi/Udy$82S">
+                                                                <field name="NUM">2</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ARG3">
+                                                          <block type="variables_get" id="p^M9yI6-s0v*W?gEGfRJ">
+                                                            <field name="VAR" id="mrT:HVX%N!396zv:OQ+h" variabletype="">_聞き返す回数</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <statement name="DO0">
+                                                      <block type="math_change" id="t)u|8k#](uZWC@Z{]:?*">
+                                                        <field name="VAR" id=":]}#0}+.1#@eE!58R,]*" variabletype="">_正解数</field>
+                                                        <value name="DELTA">
+                                                          <shadow type="math_number" id="Erf#5$?_%;[3^rs?cRxk">
+                                                            <field name="NUM">1</field>
+                                                          </shadow>
+                                                        </value>
+                                                      </block>
+                                                    </statement>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="robohon_speak" id="P09xX[Z]9F3PR(,gy:B@">
+                                            <value name="WORD">
+                                              <shadow type="text" id="$9(d`kx8|c%TBqL0za{7">
+                                                <field name="TEXT">こんにちは</field>
+                                              </shadow>
+                                              <block type="text_join" id="fwy(sMdc2r)NRL$,5iE2">
+                                                <mutation items="4"></mutation>
+                                                <value name="ADD0">
+                                                  <block type="variables_get" id="OS6b!Y^_{73?|)rMwA((">
+                                                    <field name="VAR" id="IkU#}Tfjn}83L(:APt1R" variabletype="">_問題数</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ADD1">
+                                                  <block type="text" id="?nVl#8=(@]O6IdBHHka#">
+                                                    <field name="TEXT">問中</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ADD2">
+                                                  <block type="variables_get" id="C~w[i7`i[jP1Fxa@L~pS">
+                                                    <field name="VAR" id=":]}#0}+.1#@eE!58R,]*" variabletype="">_正解数</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ADD3">
+                                                  <block type="text" id="kuik4N-P81pi?~*cW-vH">
+                                                    <field name="TEXT">問正解したよ</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="controls_if" id="#Q7C$[}:-%SYGV=Y,^ho">
+                                                <value name="IF0">
+                                                  <block type="logic_compare" id="aV]zJVrS}8:REbJP~[!O">
+                                                    <field name="OP">EQ</field>
+                                                    <value name="A">
+                                                      <block type="variables_get" id="P_CDyIgT.Y|gw08LC)cD">
+                                                        <field name="VAR" id="IkU#}Tfjn}83L(:APt1R" variabletype="">_問題数</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="variables_get" id="Tjz$5PaS6GDe=,I?YgjI">
+                                                        <field name="VAR" id=":]}#0}+.1#@eE!58R,]*" variabletype="">_正解数</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO0">
+                                                  <block type="robohon_speak" id="c{F$IEY2+/Qh0|NV(6)v">
+                                                    <value name="WORD">
+                                                      <shadow type="text" id="=Xj.Bb!JKRz9Cy[Nz@;/">
+                                                        <field name="TEXT">すごい。全問正解だよ。おめでとう</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <next>
+                                                      <block type="robohon_speak" id="VlSAf4?$N-i2py.b2VM*">
+                                                        <value name="WORD">
+                                                          <shadow type="text" id="F.c|jnI^AMWhA`N)4?n;">
+                                                            <field name="TEXT">お祝いに歌を歌うね</field>
+                                                          </shadow>
+                                                        </value>
+                                                        <next>
+                                                          <block type="robohon_sing" id="^J]k($4u3}Qt*cV0!oF8">
+                                                            <field name="SONG">ランダム</field>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </statement>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defreturn" id="G=3]G3tOT4n:bjOV:+Oe" collapsed="true" x="-3212" y="-5087">
+    <mutation>
+      <arg name="_問題番号" varid="@3mywRDmo*rDh_$mO{{-"></arg>
+      <arg name="_質問" varid="O0f[K]Af;sEqk+R-$ISt"></arg>
+      <arg name="_選択肢" varid="[J{?!5BTTFie,_n#;R?/"></arg>
+      <arg name="_聞き返す回数" varid="mrT:HVX%N!396zv:OQ+h"></arg>
+    </mutation>
+    <field name="NAME">N択クイズ</field>
+    <comment pinned="false" h="80" w="160">この関数の説明…</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="@^=z*OvC]IY=Bs@04D*b">
+        <field name="VAR" id="SmiQMXuBNj6O3vi2{O_s" variabletype="">_選択肢の数</field>
+        <value name="VALUE">
+          <block type="lists_length" id="D7LVp)=cxRl[LowN|u*k">
+            <value name="VALUE">
+              <block type="variables_get" id="qA5,]tCZ62]nXU1(|lvC">
+                <field name="VAR" id="[J{?!5BTTFie,_n#;R?/" variabletype="">_選択肢</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="%G+CnfVF!rET{|r9nM?C">
+            <field name="VAR" id=")ixLUf@6D2r$4tpD:x*?" variabletype="">_正解</field>
+            <value name="VALUE">
+              <block type="lists_getIndex" id="~9_bo15DHbETnk9P6SOC">
+                <mutation statement="false" at="false"></mutation>
+                <field name="MODE">GET</field>
+                <field name="WHERE">FIRST</field>
+                <value name="VALUE">
+                  <block type="variables_get" id="0;mJXqh[uObBgUQR,)qE">
+                    <field name="VAR" id="[J{?!5BTTFie,_n#;R?/" variabletype="">_選択肢</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="~5Z19a`_]:$+PUwZ]vLf">
+                <field name="VAR" id="[J{?!5BTTFie,_n#;R?/" variabletype="">_選択肢</field>
+                <value name="VALUE">
+                  <block type="procedures_callreturn" id="bRg-Ba;-RX_}O%d^@~(R">
+                    <mutation name="リストのシャッフル">
+                      <arg name="_リスト"></arg>
+                    </mutation>
+                    <value name="ARG0">
+                      <block type="variables_get" id="S-o0pP]t?8eel{FUeO-#">
+                        <field name="VAR" id="[J{?!5BTTFie,_n#;R?/" variabletype="">_選択肢</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="qVvA`-](NE^XVU6}#o0w">
+                    <field name="VAR" id="8cAg4U?G+9n0E862Ok?." variabletype="">_正解番号</field>
+                    <value name="VALUE">
+                      <block type="lists_indexOf" id="{K@Iwzy((FF!cS,kQ)ff">
+                        <field name="END">FIRST</field>
+                        <value name="VALUE">
+                          <block type="variables_get" id="Udf78VJ7N[Z:=]fMjgkv">
+                            <field name="VAR" id="[J{?!5BTTFie,_n#;R?/" variabletype="">_選択肢</field>
+                          </block>
+                        </value>
+                        <value name="FIND">
+                          <block type="variables_get" id=")JOz`B.5~X$-v0+fUBr9">
+                            <field name="VAR" id=")ixLUf@6D2r$4tpD:x*?" variabletype="">_正解</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="?SFjtIVUl^FJ5AT-TO;7">
+                        <field name="VAR" id="n=$PN8R8nQ2,/uUgo,=E" variabletype="">_答え方メッセージ</field>
+                        <value name="VALUE">
+                          <block type="text_join" id="|CJ^ZKd3#LVG*VwTrw3(">
+                            <mutation items="2"></mutation>
+                            <value name="ADD0">
+                              <block type="procedures_callreturn" id="Dp/CE).Xa_%JhvC7GZ:T">
+                                <mutation name="数値の範囲を文字列に変換">
+                                  <arg name="_開始"></arg>
+                                  <arg name="_終了"></arg>
+                                  <arg name="_セパレータ"></arg>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block type="math_number" id="/[mI}kd8*jOKnT(#;}%p">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                                <value name="ARG1">
+                                  <block type="variables_get" id="i75OEsyw5Ngk?U|wx^vZ">
+                                    <field name="VAR" id="SmiQMXuBNj6O3vi2{O_s" variabletype="">_選択肢の数</field>
+                                  </block>
+                                </value>
+                                <value name="ARG2">
+                                  <block type="text" id="%mACLQG4[$]X|t8:5Sj(">
+                                    <field name="TEXT">，</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block type="text" id="n39BdF]n%%luC?N)[Z]#">
+                                <field name="TEXT">の，どれかで答えてね</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="robohon_changetts" id="@.MPPPm.6cj`ToICC4gl">
+                            <field name="LANGUAGE">日本語</field>
+                            <next>
+                              <block type="robohon_speak" id="JtJo;=E08k*`|g;0])!8">
+                                <value name="WORD">
+                                  <shadow type="text" id="3H68mY+XGc(5;K?{5}jD">
+                                    <field name="TEXT">こんにちは</field>
+                                  </shadow>
+                                  <block type="text_join" id="Ja+bPSg}d9k1m^;2mSh3">
+                                    <mutation items="3"></mutation>
+                                    <value name="ADD0">
+                                      <block type="text" id=")v~5O=mT{a#%Ic;rV*6Y">
+                                        <field name="TEXT">第</field>
+                                      </block>
+                                    </value>
+                                    <value name="ADD1">
+                                      <block type="variables_get" id=",3:FM#Vna8wC.j928zA9">
+                                        <field name="VAR" id="@3mywRDmo*rDh_$mO{{-" variabletype="">_問題番号</field>
+                                      </block>
+                                    </value>
+                                    <value name="ADD2">
+                                      <block type="text" id="[H]CPsT;K/T,|kJPv:|c">
+                                        <field name="TEXT">問</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="robohon_speakmove" id="^!nz+::TZfvo:m1Oqy})">
+                                    <field name="MOTION">乾杯！</field>
+                                    <value name="WORD">
+                                      <shadow type="text" id=";}tV=L@`*mn4ejY,(YC`">
+                                        <field name="TEXT">ジャ^ン</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="robohon_speak" id="}o^L+l[(]jQaLKxo5KRT">
+                                        <value name="WORD">
+                                          <shadow type="text" id="J1|i9K~4R)]hRD:C7iud">
+                                            <field name="TEXT">こんにちは</field>
+                                          </shadow>
+                                          <block type="variables_get" id="(Sc]w;Oo~Juzo[6t/H*X">
+                                            <field name="VAR" id="O0f[K]Af;sEqk+R-$ISt" variabletype="">_質問</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="controls_for" id="++%l_fMUmOb@hkVuD#qe">
+                                            <field name="VAR" id=":q)d.68f]TK-F!x:K:EA" variabletype="">i</field>
+                                            <value name="FROM">
+                                              <shadow type="math_number" id="-C*u0ihM*)T[*r!HVfW#">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="TO">
+                                              <shadow type="math_number" id="32pO([p@I-S;81e3laZN">
+                                                <field name="NUM">10</field>
+                                              </shadow>
+                                              <block type="variables_get" id="Bt?L86]VY,;lN|=;Hfs`">
+                                                <field name="VAR" id="SmiQMXuBNj6O3vi2{O_s" variabletype="">_選択肢の数</field>
+                                              </block>
+                                            </value>
+                                            <value name="BY">
+                                              <shadow type="math_number" id="MN@Z.^5O]hkT^}t{s~14">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                            </value>
+                                            <statement name="DO">
+                                              <block type="robohon_speak" id="vjJ1YN6v4q+rP91e?o)G">
+                                                <value name="WORD">
+                                                  <shadow type="text" id="VssmJ9rY=4i:MdkwJ,pe">
+                                                    <field name="TEXT">こんにちは</field>
+                                                  </shadow>
+                                                  <block type="text_join" id="0]sKsYAH:j?d{-RP?B.A">
+                                                    <mutation items="3"></mutation>
+                                                    <value name="ADD0">
+                                                      <block type="variables_get" id="cRLurpw64z)=xMGyauH.">
+                                                        <field name="VAR" id=":q)d.68f]TK-F!x:K:EA" variabletype="">i</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ADD1">
+                                                      <block type="text" id="wc7|,KkrJ5?Y%M?LA%*c">
+                                                        <field name="TEXT">。</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ADD2">
+                                                      <block type="lists_getIndex" id="t|,$QGQ5_Xf8*Zsm*(qf">
+                                                        <mutation statement="false" at="true"></mutation>
+                                                        <field name="MODE">GET</field>
+                                                        <field name="WHERE">FROM_START</field>
+                                                        <value name="VALUE">
+                                                          <block type="variables_get" id="BqEr:UIkzgoeqRax6w/r">
+                                                            <field name="VAR" id="[J{?!5BTTFie,_n#;R?/" variabletype="">_選択肢</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="AT">
+                                                          <block type="variables_get" id="bNr{X0n4MJK-g%f.O6D2">
+                                                            <field name="VAR" id=":q)d.68f]TK-F!x:K:EA" variabletype="">i</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                            <next>
+                                              <block type="robohon_speak" id="M1*dWDf?Ynld^jMhD;;t">
+                                                <value name="WORD">
+                                                  <shadow type="text" id="S.M[k@KrxtqDxKk[1Qy}">
+                                                    <field name="TEXT">の，どれかで答えてね</field>
+                                                  </shadow>
+                                                  <block type="variables_get" id="~Kcf:5x]NyclmC!:x@_J">
+                                                    <field name="VAR" id="n=$PN8R8nQ2,/uUgo,=E" variabletype="">_答え方メッセージ</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="variables_set" id="t%Jfak%:9L}@h0LN[Z9B">
+                                                    <field name="VAR" id="?rM2{g_s*KdX=M}Y`}5-" variabletype="">_答え</field>
+                                                    <value name="VALUE">
+                                                      <block type="math_number" id="waqveQmKijW.t)CF*U@?">
+                                                        <field name="NUM">0</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="variables_set" id=".L*f^?yq;e5I,TfaSx}z">
+                                                        <field name="VAR" id="?luMic1LmKF9]fc:U@b@" variabletype="">_聞き返した回数</field>
+                                                        <value name="VALUE">
+                                                          <block type="math_number" id="v/Zy;lj3Bic2Zv!-d]_g">
+                                                            <field name="NUM">0</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="controls_whileUntil" id="f,5~td33aIUOEd!-VrKc">
+                                                            <field name="MODE">WHILE</field>
+                                                            <value name="BOOL">
+                                                              <block type="logic_compare" id="@.dtT2OY.1Z^*K./LYt?">
+                                                                <field name="OP">EQ</field>
+                                                                <value name="A">
+                                                                  <block type="variables_get" id="rIlJ(mNDiW,L3NRe@k)9">
+                                                                    <field name="VAR" id="?rM2{g_s*KdX=M}Y`}5-" variabletype="">_答え</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="math_number" id="@9mTgYAX_)Ll@R@1QzBG">
+                                                                    <field name="NUM">0</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <statement name="DO">
+                                                              <block type="robohon_changeasr" id="hCr;B0O@qwOLB6jiz7X!">
+                                                                <field name="LANGUAGE">日本語</field>
+                                                                <next>
+                                                                  <block type="robohon_listenwaitany" id="Wu5h-N6];snk|9yhBsT-">
+                                                                    <next>
+                                                                      <block type="variables_set" id="RDjnE*up0)t4uY2=`F^C">
+                                                                        <field name="VAR" id="{7?j75Xe5$.CLvvCN4t)" variabletype="">_聞こえた言葉</field>
+                                                                        <value name="VALUE">
+                                                                          <block type="text_join" id="doZ)SI?8[b_9Z|X)!izF">
+                                                                            <mutation items="2"></mutation>
+                                                                            <value name="ADD0">
+                                                                              <block type="text" id="`R7YI;ixtOJrd@I0I_mt">
+                                                                                <field name="TEXT"></field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="ADD1">
+                                                                              <block type="robohon_lastlistenword" id="jCg89w8}Q$oC_%D!(?RT"></block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="robohon_speak" id="pG;h;9($7fl=J%QRDvI@">
+                                                                            <value name="WORD">
+                                                                              <shadow type="text" id="B,Ssz4i)A/,c?QQ5QJ1p">
+                                                                                <field name="TEXT">こんにちは</field>
+                                                                              </shadow>
+                                                                              <block type="text_join" id="6l{N1YV+yP9UQKVJ*iEx">
+                                                                                <mutation items="2"></mutation>
+                                                                                <value name="ADD0">
+                                                                                  <block type="variables_get" id="iv%O;L~*_iO045Je^OuJ">
+                                                                                    <field name="VAR" id="{7?j75Xe5$.CLvvCN4t)" variabletype="">_聞こえた言葉</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="ADD1">
+                                                                                  <block type="text" id="FABpSz~ZKT0Y,6}KdO_=">
+                                                                                    <field name="TEXT">だね</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block type="variables_set" id="Bw^z_;d:{KM/KI,Q=KZ8">
+                                                                                <field name="VAR" id="?rM2{g_s*KdX=M}Y`}5-" variabletype="">_答え</field>
+                                                                                <value name="VALUE">
+                                                                                  <block type="procedures_callreturn" id="?v6eYjL~9@cX0Sa!bng%">
+                                                                                    <mutation name="文字列を数値に変換">
+                                                                                      <arg name="_文字列"></arg>
+                                                                                    </mutation>
+                                                                                    <value name="ARG0">
+                                                                                      <block type="variables_get" id=")R_t+S5.}egpl.Yx_3_/">
+                                                                                        <field name="VAR" id="{7?j75Xe5$.CLvvCN4t)" variabletype="">_聞こえた言葉</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="controls_if" id="7GR~K}ZQ%wA[Lc3!C@3E">
+                                                                                    <value name="IF0">
+                                                                                      <block type="logic_operation" id="J3_lCah.Il4pI1mF8`/h">
+                                                                                        <field name="OP">OR</field>
+                                                                                        <value name="A">
+                                                                                          <block type="logic_compare" id="*N@FKF,$J|OAF!`~_:Xj">
+                                                                                            <field name="OP">EQ</field>
+                                                                                            <value name="A">
+                                                                                              <block type="variables_get" id="~!fc+oxR6a#V~jju`/V~">
+                                                                                                <field name="VAR" id="?rM2{g_s*KdX=M}Y`}5-" variabletype="">_答え</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="B">
+                                                                                              <block type="math_number" id="Q~n+a{Q,~Axz+oY_Nr1*">
+                                                                                                <field name="NUM">-1</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="B">
+                                                                                          <block type="logic_compare" id="c,j%FKNn{QUH[Vkl#w$/">
+                                                                                            <field name="OP">GT</field>
+                                                                                            <value name="A">
+                                                                                              <block type="variables_get" id="3`4+vCW5PEz-*h2A]mli">
+                                                                                                <field name="VAR" id="?rM2{g_s*KdX=M}Y`}5-" variabletype="">_答え</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="B">
+                                                                                              <block type="variables_get" id="~a]+)KjW3[r|D(36r@Xz">
+                                                                                                <field name="VAR" id="SmiQMXuBNj6O3vi2{O_s" variabletype="">_選択肢の数</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <statement name="DO0">
+                                                                                      <block type="variables_set" id="TQ-vl{zdgz*qD1ZIs,W,">
+                                                                                        <field name="VAR" id="?rM2{g_s*KdX=M}Y`}5-" variabletype="">_答え</field>
+                                                                                        <value name="VALUE">
+                                                                                          <block type="math_number" id="mOS[q]c{BLZ*BU=VZH_C">
+                                                                                            <field name="NUM">0</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <next>
+                                                                                          <block type="math_change" id="XF;lUoQtrUr=%qnsR]uG">
+                                                                                            <field name="VAR" id="?luMic1LmKF9]fc:U@b@" variabletype="">_聞き返した回数</field>
+                                                                                            <value name="DELTA">
+                                                                                              <shadow type="math_number" id="1TW[S-Z7=jd=}r2rzR;*">
+                                                                                                <field name="NUM">1</field>
+                                                                                              </shadow>
+                                                                                            </value>
+                                                                                            <next>
+                                                                                              <block type="controls_if" id="9%5?coI-]E#1Y,0y+nbg">
+                                                                                                <mutation else="1"></mutation>
+                                                                                                <value name="IF0">
+                                                                                                  <block type="logic_compare" id="p,tamt,|_$e7tFN(I0@]">
+                                                                                                    <field name="OP">LTE</field>
+                                                                                                    <value name="A">
+                                                                                                      <block type="variables_get" id="ZqHl[)mnAjEHs.^K#DRQ">
+                                                                                                        <field name="VAR" id="?luMic1LmKF9]fc:U@b@" variabletype="">_聞き返した回数</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="B">
+                                                                                                      <block type="variables_get" id="+I(rj;/]6O:(t,sCEV]R">
+                                                                                                        <field name="VAR" id="mrT:HVX%N!396zv:OQ+h" variabletype="">_聞き返す回数</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <statement name="DO0">
+                                                                                                  <block type="robohon_speak" id="ar|yW?C(We8{8|/k(lHz">
+                                                                                                    <value name="WORD">
+                                                                                                      <shadow type="text" id="8Dz}pZay$jB;kgjX/.~/">
+                                                                                                        <field name="TEXT">あれ，もう一回言ってね</field>
+                                                                                                      </shadow>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </statement>
+                                                                                                <statement name="ELSE">
+                                                                                                  <block type="robohon_speak" id="uIWF)IV?R3L].kXLf2SH">
+                                                                                                    <value name="WORD">
+                                                                                                      <shadow type="text" id=":KT%y(:%U3[Wc~p?-Ieo">
+                                                                                                        <field name="TEXT">ごめんなさい，聞き取れなかったよ</field>
+                                                                                                      </shadow>
+                                                                                                    </value>
+                                                                                                    <next>
+                                                                                                      <block type="controls_flow_statements" id="C`,EgZ4c-`p]gfkIJvHW">
+                                                                                                        <field name="FLOW">BREAK</field>
+                                                                                                      </block>
+                                                                                                    </next>
+                                                                                                  </block>
+                                                                                                </statement>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </statement>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </statement>
+                                                            <next>
+                                                              <block type="controls_if" id="^@jPFm$!2GJTXzrphiY?">
+                                                                <mutation else="1"></mutation>
+                                                                <value name="IF0">
+                                                                  <block type="logic_compare" id="n:bvR[f0s8_bH}cK6/_q">
+                                                                    <field name="OP">EQ</field>
+                                                                    <value name="A">
+                                                                      <block type="variables_get" id="YRg.^P^FT^WPe`dfBu(G">
+                                                                        <field name="VAR" id="?rM2{g_s*KdX=M}Y`}5-" variabletype="">_答え</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="variables_get" id="{FJnf,CT1FEc_XE4klVa">
+                                                                        <field name="VAR" id="8cAg4U?G+9n0E862Ok?." variabletype="">_正解番号</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <statement name="DO0">
+                                                                  <block type="robohon_speak" id="5IGMuO/9/wmg(m]Vo*%@">
+                                                                    <value name="WORD">
+                                                                      <shadow type="text" id="uL?~U5*`n:O=VaLe^9*K">
+                                                                        <field name="TEXT">わーい，正解だよ</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                  </block>
+                                                                </statement>
+                                                                <statement name="ELSE">
+                                                                  <block type="robohon_speak" id="TdFNHD)S(bp13zRq:PyV">
+                                                                    <value name="WORD">
+                                                                      <shadow type="text" id="#F|?]pcxf9TNjs3|DdyU">
+                                                                        <field name="TEXT">残念，不正解だよ</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="robohon_speak" id="ozKtv+jvz)zaDK0[oC[F">
+                                                                        <value name="WORD">
+                                                                          <shadow type="text" id="DCT_m{W5GFBhm52KA;/9">
+                                                                            <field name="TEXT">こんにちは</field>
+                                                                          </shadow>
+                                                                          <block type="text_join" id="CdX{hZ0,1~4[-6vzlHcM">
+                                                                            <mutation items="5"></mutation>
+                                                                            <value name="ADD0">
+                                                                              <block type="text" id="7{Ve1/YHGiSE5:|`(@Py">
+                                                                                <field name="TEXT">正解は</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="ADD1">
+                                                                              <block type="variables_get" id="1*|7n-!/#J)]_aaA{^=y">
+                                                                                <field name="VAR" id="8cAg4U?G+9n0E862Ok?." variabletype="">_正解番号</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="ADD2">
+                                                                              <block type="text" id="]t9~84]{GrzWVe:K]6X1">
+                                                                                <field name="TEXT">の</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="ADD3">
+                                                                              <block type="variables_get" id="Q~IK_w:]|u9QXI=n]N]f">
+                                                                                <field name="VAR" id=")ixLUf@6D2r$4tpD:x*?" variabletype="">_正解</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="ADD4">
+                                                                              <block type="text" id="L.`XotG*lup6acj!0J~`">
+                                                                                <field name="TEXT">だよ</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </statement>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="logic_compare" id="V`MTSv?3{:tJuB_0#qZn">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="variables_get" id="wH7o$6HT1z0PVF1`QbL*">
+            <field name="VAR" id="?rM2{g_s*KdX=M}Y`}5-" variabletype="">_答え</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="variables_get" id="33p`hi]dqxe#JeZ_zo@$">
+            <field name="VAR" id="8cAg4U?G+9n0E862Ok?." variabletype="">_正解番号</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="ly5+|nxlN8v[KEoo|bh2" x="-3713" y="-4962">
+    <mutation statements="false"></mutation>
+    <field name="NAME">クイズ一覧取得</field>
+    <comment pinned="false" h="80" w="160">この関数の説明…</comment>
+    <value name="RETURN">
+      <block type="lists_create_with" id=").o@LA`GeJ/Hw/HWEoH0">
+        <mutation items="12"></mutation>
+        <comment pinned="false" h="80" w="160">クイズ一覧</comment>
+        <value name="ADD0">
+          <block type="lists_create_with" id="Vh2eTKUH}w}f$S[BIjsD">
+            <mutation items="2"></mutation>
+            <comment pinned="false" h="127" w="238">質問
+正解（答え1）
+答え2
+答え3
+            </comment>
+            <value name="ADD0">
+              <block type="text" id="1[Y(@CRW_2`V%:w-XF2=">
+                <field name="TEXT">ボクが目覚めたときに初めて言う言葉は？</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lists_create_with" id="0@nYpK-4pYLb(6,qO]%," collapsed="true">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="^fLb[L]o8EPOiDg@`y1s">
+                    <field name="TEXT">あれ？，ここはどこだろう</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="F-@?=bZiAz}xBu6p=CvK">
+                    <field name="TEXT">初めまして，ボク，ロボホン</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="bhw}JWU[W+?u0hCgVWf/">
+                    <field name="TEXT">あ，君がボクを箱から出してくれたんだね</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="lists_create_with" id="FsSWL3dUO`Ciykty]XE.">
+            <mutation items="2"></mutation>
+            <comment pinned="false" h="127" w="238">質問
+正解（答え1）
+答え2
+答え3
+            </comment>
+            <value name="ADD0">
+              <block type="text" id="0,a=qV7X~=nu,quL0`ff">
+                <field name="TEXT">ボクの体にはサーボモーターがいくつ入っている？</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lists_create_with" id="5R+2F^`S|GlV8sHLc]qE" collapsed="true">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="QH23-S7[HH@T-imcjw]@">
+                    <field name="TEXT">13個</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="Fws0jb,hM{,t[A{LuMA+">
+                    <field name="TEXT">10個</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="^UrJd8VX{pseu|LzRJG_">
+                    <field name="TEXT">23個</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="lists_create_with" id=";9XzW^OrAqn;;2C51-)`">
+            <mutation items="2"></mutation>
+            <comment pinned="false" h="127" w="238">質問
+正解（答え1）
+答え2
+答え3
+            </comment>
+            <value name="ADD0">
+              <block type="text" id="g~j`.Rea{fP3Mi/p[{/O">
+                <field name="TEXT">ボクが「歩いて」と言われたとき，最初に出す足は？</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lists_create_with" id="4ow!OR(]MI$JAeJ=sa#G" collapsed="true">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="vEGMzgG9i4~vluSy.[0F">
+                    <field name="TEXT">右足</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="I6+(i0[h6F/;_0/D]6^P">
+                    <field name="TEXT">左足</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="pe:-Hvvu_$X;m=qyE2Y}">
+                    <field name="TEXT">ぬき足</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="lists_create_with" id="/ne2g;z#Y!D;lW}]86Qd">
+            <mutation items="2"></mutation>
+            <comment pinned="false" h="127" w="238">質問
+正解（答え1）
+答え2
+答え3
+            </comment>
+            <value name="ADD0">
+              <block type="text" id="5AqgL#?)6wlO-hyDB}(H">
+                <field name="TEXT">ボクの身長は？</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lists_create_with" id="eDbjfo%@/,:Oy|*Fgk~A" collapsed="true">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="l,mODAk4:hjbEgmMmu(Z">
+                    <field name="TEXT">19.5cm</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="=Ms-nR1#%@?sWF!sGbhb">
+                    <field name="TEXT">19cm</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="LPg!-fxSU/d^?h4GSYmh">
+                    <field name="TEXT">18.5cm</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="lists_create_with" id="]|)GnTFIn(D54{d9^.kN">
+            <mutation items="2"></mutation>
+            <comment pinned="false" h="127" w="238">質問
+正解（答え1）
+答え2
+答え3
+            </comment>
+            <value name="ADD0">
+              <block type="text" id="Z@DLEq,nz/*?/h0Q._D*">
+                <field name="TEXT">ボクの胸の中に埋まっているのは？</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lists_create_with" id="UNd`X[TE`}?q6(}X`ic5" collapsed="true">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="DFz-Kn5@9M(rr3MFO|XO">
+                    <field name="TEXT">ジルコニア</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="8c6W9bk%3!!KA!A1|Zxb">
+                    <field name="TEXT">ジルコン</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="u/!ap/gFEfg8iVQ#GL~6">
+                    <field name="TEXT">ジルバ</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ADD5">
+          <block type="lists_create_with" id="Y1Do_gRHypT?Y=z!UB@4">
+            <mutation items="2"></mutation>
+            <comment pinned="false" h="127" w="238">質問
+正解（答え1）
+答え2
+答え3
+            </comment>
+            <value name="ADD0">
+              <block type="text" id="]%pT5B-4{m:h)Ro+{8_r">
+                <field name="TEXT">ボクの誕生日はいつ？</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lists_create_with" id="kdF6rmH$Z-lAnerw9z*~" collapsed="true">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="d(qW{Wi](q-%p3b[A$2e">
+                    <field name="TEXT">2016年5月26日</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="ySRn`dZW!g;2^^Nsv5Qb">
+                    <field name="TEXT">2016年5月25日</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="eO#V`zeH]~L9^nnsFZeS">
+                    <field name="TEXT">2016年5月27日</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ADD6">
+          <block type="lists_create_with" id="PMiMzW~SMEL,;4huMQ)L">
+            <mutation items="2"></mutation>
+            <comment pinned="false" h="127" w="238">質問
+正解（答え1）
+答え2
+答え3
+            </comment>
+            <value name="ADD0">
+              <block type="text" id="yQ2xexP{],ktHR})gu?x">
+                <field name="TEXT">MKタクシーさんが提供している，ボクを使ったサービスは？</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lists_create_with" id="mU,A~z_]iA~}Bh|;@;x7" collapsed="true">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="Alzy.!,bt5B{;BGc9]P[">
+                    <field name="TEXT">京のロボ旅タクシー</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="J@HiwDe$gUXEnzfYk1)r">
+                    <field name="TEXT">京のタクシーロボ旅</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="tiF}4`WpDj)uWJ{o}iI7">
+                    <field name="TEXT">ロボホンと行くロボ旅京都</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ADD7">
+          <block type="lists_create_with" id="c9/XH(O[^Kw,YkNOSIlp">
+            <mutation items="2"></mutation>
+            <comment pinned="false" h="127" w="238">質問
+正解（答え1）
+答え2
+答え3
+            </comment>
+            <value name="ADD0">
+              <block type="text" id="yTm/_WH;*$}}60g@wX]1">
+                <field name="TEXT">ボクのセリフや動きをプログラミングできるアプリは？</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lists_create_with" id="d@c,|3ag~Qby~^QmpFu;" collapsed="true">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="A#RG2/V9FbEOF!BtE?H-">
+                    <field name="TEXT">ロブリック</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="FIca%mvuh8t7D5s9*{R-">
+                    <field name="TEXT">ロボブロック</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="HW]X=wf2lG=4`qyCn1cj">
+                    <field name="TEXT">スクワット</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ADD8">
+          <block type="lists_create_with" id=")Kgi3KAE_f5w@ca`TTE1">
+            <mutation items="2"></mutation>
+            <comment pinned="false" h="127" w="238">質問
+正解（答え1）
+答え2
+答え3
+            </comment>
+            <value name="ADD0">
+              <block type="text" id="*VdRmNM[{c!0r(iSc]i+">
+                <field name="TEXT">ボクのアプリを作ってくれる認定開発パートナーは何社ある？</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lists_create_with" id="|(B~q6In,I%XzHgL=ef:" collapsed="true">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="|,8SU.Epr*YS%^X@KvYU">
+                    <field name="TEXT">80社</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id=";j:g%UmFh([p_$,gp5T{">
+                    <field name="TEXT">70社</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="Mk4YihJsAPv7jK[1FalD">
+                    <field name="TEXT">60社</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ADD9">
+          <block type="lists_create_with" id="H5;bqlcds^wkUJufd+I4">
+            <mutation items="2"></mutation>
+            <comment pinned="false" h="127" w="238">質問
+正解（答え1）
+答え2
+答え3
+            </comment>
+            <value name="ADD0">
+              <block type="text" id="-b7[4XfrCACv7M:UZqHf">
+                <field name="TEXT">ボクのお友だちは発売から3年間で何人になった？</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lists_create_with" id="5J|)x_?dsXG3!`N54EA`" collapsed="true">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="text" id=".?R+Rq6he5^cuF7om|(S">
+                    <field name="TEXT">12,000人</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="AH*n$$9.xO#E@6V!0;oD">
+                    <field name="TEXT">10,000人</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="H@lMCJ#0f$!h^XzF{J]o">
+                    <field name="TEXT">20,000人</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ADD10">
+          <block type="lists_create_with" id="`is*@V8cd2ud[]Q?RAw5">
+            <mutation items="2"></mutation>
+            <comment pinned="false" h="127" w="238">質問
+正解（答え1）
+答え2
+答え3
+            </comment>
+            <value name="ADD0">
+              <block type="text" id="Z4pX[5SN`|k=Mb][IWgD">
+                <field name="TEXT">2016年11月1日に発表された，シャープさんのコーポレートメッセージは？</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lists_create_with" id="~$(h[yD%27yyf};($69q" collapsed="true">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="NZjufMxSqntoK6KL12hx">
+                    <field name="TEXT">Be Original</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="RWnZFKGfCB](;3Ko1a1@">
+                    <field name="TEXT">Be Ambitious</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="~#0_azmVyndUAF]BMsY~">
+                    <field name="TEXT">Be My Baby</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ADD11">
+          <block type="lists_create_with" id="j__rQb@@#$pJNY_ig%g9">
+            <mutation items="2"></mutation>
+            <comment pinned="false" h="127" w="238">質問
+正解（答え1）
+答え2
+答え3
+            </comment>
+            <value name="ADD0">
+              <block type="text" id="X;UWUr)T~9PGN=3R(gBs">
+                <field name="TEXT">ボクのお母さん，影井さんの卒業研究のテーマは？</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lists_create_with" id="a?yHIPF;:0/}:U=.p[Lk" collapsed="true">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="=EfLA^S(Fh`l8[}k#XaH">
+                    <field name="TEXT">携帯電話の着信音が実際の楽曲と違うことがストレスになるのか</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="xdnlOhyjk:|aA~PAjjwW">
+                    <field name="TEXT">携帯電話ビジネスにおける競争優位戦略</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="W_I,XrMmz/)7R@-f6M.i">
+                    <field name="TEXT">携帯電話の普及による人々の変化</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</xml>
