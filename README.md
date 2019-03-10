@@ -30,6 +30,8 @@
 
 ## クイズアプリ（`quiz-app.xml`）
 
+[![クイズアプリ実行動画](https://img.youtube.com/vi/A8mRhT-6340/0.jpg)](https://youtu.be/A8mRhT-6340)
+
 ### 特徴
 
 * クイズの作成は「質問」「選択肢の一覧（最初が正解）」を追加するだけでできます。
