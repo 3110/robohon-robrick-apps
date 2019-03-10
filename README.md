@@ -48,5 +48,7 @@
 
 * 「クイズ一覧取得」関数にあるリストを編集します。  
   <a href="https://gyazo.com/5e53e42df63c0f7d60fbbc6229a607f5"><img src="https://i.gyazo.com/5e53e42df63c0f7d60fbbc6229a607f5.png" alt="クイズ一覧" width="800"/></a>
+* 右側がギザギザになっているブロックには，いくつかのブロックがまとめられています。そのブロックを右クリックし，メニューの「ブロックを展開する」を選択すると表示されます。  
+  <a href="https://gyazo.com/8ccafbecb34bbb4dc66ec2ba31fd1b54"><img src="https://i.gyazo.com/8ccafbecb34bbb4dc66ec2ba31fd1b54.gif" alt="Image from Gyazo" width="800"/></a>
 * クイズ1問分のデータは以下のようになっています。  
   <a href="https://gyazo.com/c71fc488cf05ed08c549d6d230aae470"><img src="https://i.gyazo.com/c71fc488cf05ed08c549d6d230aae470.png" alt="Image from Gyazo" width="800"/></a>
