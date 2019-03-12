@@ -1,0 +1,140 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="H5eYZ-{TqZgvoD+,uV[?">バージョン</variable>
+    <variable type="" id=",JlSc((APT`8,XCtp38j">励まし一覧</variable>
+  </variables>
+  <block type="robohon_startBlocks" id="D]BA%y9eZkT3.V3RZ@9^" x="163" y="88">
+    <next>
+      <block type="variables_set" id="-_`qv16PcHx^]2n?T`Mc">
+        <field name="VAR" id="H5eYZ-{TqZgvoD+,uV[?" variabletype="">バージョン</field>
+        <value name="VALUE">
+          <block type="text" id="C~-1s.`BxzHIw=LK(Ogn">
+            <field name="TEXT">0.0.1</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="}Nj;39nRX(B3=B`?m(!{">
+            <field name="VAR" id=",JlSc((APT`8,XCtp38j" variabletype="">励まし一覧</field>
+            <value name="VALUE">
+              <block type="lists_create_with" id="LE03.yJ2`CmY=Pkz@w}D">
+                <mutation items="9"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="A4Ke=@`|rsYwtM6[xc44">
+                    <field name="TEXT">がんばってるね</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="fth[CJFu@(d9_9!ZcVtJ">
+                    <field name="TEXT">すごいね</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="y^B2XsmC5/*W3jjg}cCC">
+                    <field name="TEXT">話してくれてありがとう</field>
+                  </block>
+                </value>
+                <value name="ADD3">
+                  <block type="text" id="a4=y!C=f|kTnAbnA_`~!">
+                    <field name="TEXT">いいね</field>
+                  </block>
+                </value>
+                <value name="ADD4">
+                  <block type="text" id="#c(D%$8Ate|tW1M9Cm$E">
+                    <field name="TEXT">元気出してね</field>
+                  </block>
+                </value>
+                <value name="ADD5">
+                  <block type="text" id="R18OdFRKz!?2C-+L@xLa">
+                    <field name="TEXT">大丈夫？</field>
+                  </block>
+                </value>
+                <value name="ADD6">
+                  <block type="text" id="7iM8|q-.go-%r.?USJX;">
+                    <field name="TEXT">大変だったね</field>
+                  </block>
+                </value>
+                <value name="ADD7">
+                  <block type="text" id="qJGW04lNW$ilw%$,kKyb">
+                    <field name="TEXT">心配ないよ</field>
+                  </block>
+                </value>
+                <value name="ADD8">
+                  <block type="text" id="}onFgc|@:,+A~Si75?6e">
+                    <field name="TEXT">いつもそばにいるよ</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="robohon_changetts" id="Wob?+#IHdcNqMzb!Xl]K">
+                <field name="LANGUAGE">日本語</field>
+                <next>
+                  <block type="robohon_speak" id="X)P$TusHG+SNSZ`d8dCu">
+                    <value name="WORD">
+                      <shadow type="text" id="r/7_)-eww9sw,`(8cjhj">
+                        <field name="TEXT">ボクに何でも話してね</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="robohon_listenwaitany" id="1C6+Dof`x|?RZaI?I(7z">
+                        <next>
+                          <block type="controls_whileUntil" id="qm48eHFJf`/BdBB`Ze[?">
+                            <field name="MODE">UNTIL</field>
+                            <value name="BOOL">
+                              <block type="logic_compare" id=":L5s7;y}@B?yLzUqoSaG">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="robohon_lastlistenword" id="a+35^|.8`8`[:29GL#lj"></block>
+                                </value>
+                                <value name="B">
+                                  <block type="text" id="T.Ou1~cvMRXEXT)#}-zA">
+                                    <field name="TEXT">終わり</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="robohon_speak" id="!ja::if={=Mw.mW1nmQ@">
+                                <value name="WORD">
+                                  <shadow type="text" id="x9wbH-60=D~H$QVR(XA|">
+                                    <field name="TEXT">こんにちは</field>
+                                  </shadow>
+                                  <block type="lists_getIndex" id="(Emmw/z(]t+](h}xW$Zo">
+                                    <mutation statement="false" at="false"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">RANDOM</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="R,^xXpKczVwNBgSA^v:%">
+                                        <field name="VAR" id=",JlSc((APT`8,XCtp38j" variabletype="">励まし一覧</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="robohon_listenwaitany" id="sr{41n(vm]$,RD%c*a,S"></block>
+                                </next>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="robohon_speak" id="gfmwF2)6gL*60}*[2nVJ">
+                                <value name="WORD">
+                                  <shadow type="text" id="8At0:@XH5!;1-C)uKC~8">
+                                    <field name="TEXT">何かあったらまた話してね</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

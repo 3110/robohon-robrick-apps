@@ -2,7 +2,7 @@
 
 ## インストール方法
 
-* [ZIPファイル](https://github.com/3110/robohon-robrick/archive/v0.0.2.zip)をダウンロードします。
+* [ZIPファイル](https://github.com/3110/robohon-robrick/archive/v0.0.3.zip)をダウンロードします。
 * ダウンロードしたZIPファイルを適当なフォルダに展開します。
 * ロボホンでロブリックアプリを起動します。  
   <a href="https://gyazo.com/4c6059c6ee7deace2185d194e2587e22"><img src="https://i.gyazo.com/4c6059c6ee7deace2185d194e2587e22.png" alt="ロブリックアプリアイコン" width="180"/></a>
@@ -65,3 +65,14 @@
   <a href="https://gyazo.com/8ccafbecb34bbb4dc66ec2ba31fd1b54"><img src="https://i.gyazo.com/8ccafbecb34bbb4dc66ec2ba31fd1b54.gif" alt="Image from Gyazo" width="800"/></a>
 * クイズ1問分のデータは以下のようになっています。  
   <a href="https://gyazo.com/c71fc488cf05ed08c549d6d230aae470"><img src="https://i.gyazo.com/c71fc488cf05ed08c549d6d230aae470.png" alt="Image from Gyazo" width="800"/></a>
+
+## 励ましてくれるアプリ（`encourage-me-app.xml`）
+
+### 特徴
+
+* ロボホンに何を話しかけてもポジティブな答えをランダムに返してくれます。
+* 「終わり」というとアプリを終了します。
+
+### カスタマイズ
+
+* 「励まし一覧」のリストにポジティブな答えを追加してみましょう。
