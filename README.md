@@ -1,5 +1,10 @@
 # ロボホンの[ロブリックアプリ](https://robohon.com/apps/robrick.php)で動かせるプログラム
 
+## アプリ一覧
+
+* [クイズアプリ](https://github.com/3110/robohon-robrick#%E3%82%AF%E3%82%A4%E3%82%BA%E3%82%A2%E3%83%97%E3%83%AAquiz-appxml)（`quiz-app.xml`）
+* [励ましてくれるアプリ](https://github.com/3110/robohon-robrick#%E5%8A%B1%E3%81%BE%E3%81%97%E3%81%A6%E3%81%8F%E3%82%8C%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AAencourage-me-appxml)（`encourage-me-app.xml`）
+
 ## インストール方法
 
 * [ZIPファイル](https://github.com/3110/robohon-robrick/archive/v0.0.3.zip)をダウンロードします。
