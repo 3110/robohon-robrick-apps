@@ -1535,12 +1535,31 @@
                                                                   </block>
                                                                 </statement>
                                                                 <statement name="ELSE">
-                                                                  <block type="robohon_speak" id="TdFNHD)S(bp13zRq:PyV">
-                                                                    <value name="WORD">
-                                                                      <shadow type="text" id="#F|?]pcxf9TNjs3|DdyU">
-                                                                        <field name="TEXT">残念，不正解だよ</field>
-                                                                      </shadow>
+                                                                  <block type="controls_if" id="}xhJa}z-0aVasz]u#D6J">
+                                                                    <value name="IF0">
+                                                                      <block type="logic_compare" id="Ri(oTTznK](q8XVS@,QX">
+                                                                        <field name="OP">LTE</field>
+                                                                        <value name="A">
+                                                                          <block type="variables_get" id="zi]U.Qjz=v_85s5iTd@b">
+                                                                            <field name="VAR" id="JQ_21Q$+IC.t}`v]bHsA" variabletype="">_聞き返した回数</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="B">
+                                                                          <block type="variables_get" id="L[nQ)VBC--GjQEp,5r0Y">
+                                                                            <field name="VAR" id="vio46W67S~e8E`){mJwF" variabletype="">_聞き返す回数</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
                                                                     </value>
+                                                                    <statement name="DO0">
+                                                                      <block type="robohon_speak" id="TdFNHD)S(bp13zRq:PyV">
+                                                                        <value name="WORD">
+                                                                          <shadow type="text" id="#F|?]pcxf9TNjs3|DdyU">
+                                                                            <field name="TEXT">残念，不正解だよ</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                      </block>
+                                                                    </statement>
                                                                     <next>
                                                                       <block type="robohon_speak" id="ozKtv+jvz)zaDK0[oC[F">
                                                                         <value name="WORD">
@@ -1655,7 +1674,7 @@
       </block>
     </value>
   </block>
-  <block type="procedures_defreturn" id="ly5+|nxlN8v[KEoo|bh2" x="-3713" y="-4962">
+  <block type="procedures_defreturn" id="ly5+|nxlN8v[KEoo|bh2" x="-3682" y="-4957">
     <mutation statements="false"></mutation>
     <field name="NAME">クイズ一覧取得</field>
     <comment pinned="false" h="80" w="160">この関数の説明…</comment>
