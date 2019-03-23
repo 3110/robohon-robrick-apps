@@ -170,6 +170,39 @@
                                                         <field name="TEXT">オッケー，頑張ってね！</field>
                                                       </shadow>
                                                     </value>
+                                                    <next>
+                                                      <block type="controls_if" id="Lz));5_k/dAhP,u(8dKi">
+                                                        <value name="IF0">
+                                                          <block type="logic_compare" id="#.XCqL,(a@8g;DkrG{bO">
+                                                            <field name="OP">LT</field>
+                                                            <value name="A">
+                                                              <block type="lists_length" id="fo%[p_+w)OR5$y|(3g+e">
+                                                                <value name="VALUE">
+                                                                  <block type="variables_get" id="g-mh#(`zm6~j.,U~%[Rl">
+                                                                    <field name="VAR" id="OE;xyKxIz:l/ZLyh]0Rr" variabletype="">クイズ一覧</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block type="variables_get" id="y44~g}BX8jV.+Y79`_7N">
+                                                                <field name="VAR" id="vJ+f{%0i.{EtOodfpSI_" variabletype="">出題数</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO0">
+                                                          <block type="variables_set" id="h`{])HYv4d.Mw;SNkqN[">
+                                                            <field name="VAR" id="OE;xyKxIz:l/ZLyh]0Rr" variabletype="">クイズ一覧</field>
+                                                            <value name="VALUE">
+                                                              <block type="procedures_callreturn" id="{t4YT^6~C{%dE9ynh$,g">
+                                                                <mutation name="クイズ一覧取得"></mutation>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </statement>
+                                                      </block>
+                                                    </next>
                                                   </block>
                                                 </statement>
                                                 <statement name="NO">
