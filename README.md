@@ -7,7 +7,7 @@
 
 ## インストール方法
 
-* [ZIPファイル](https://github.com/3110/robohon-robrick/archive/v0.0.3.zip)をダウンロードします。
+* [ZIPファイル](https://github.com/3110/robohon-robrick/archive/v0.0.4.zip)をダウンロードします。
 * ダウンロードしたZIPファイルを適当なフォルダに展開します。
 * ロボホンでロブリックアプリを起動します。  
   <a href="https://gyazo.com/4c6059c6ee7deace2185d194e2587e22"><img src="https://i.gyazo.com/4c6059c6ee7deace2185d194e2587e22.png" alt="ロブリックアプリアイコン" width="180"/></a>
@@ -39,7 +39,8 @@
 
 ### 特徴
 
-* クイズの作成は「質問」「選択肢の一覧（最初が正解）」を追加するだけでできます。
+* クイズの作成は「質問」「選択肢の一覧（最初が正解）」「解説」を追加するだけでできます。  
+    * 「解説」は追加してもしなくても構いません。
 * クイズ名を指定できます。
 * 出題数を変えられます。
 * 出題はランダム・順番通りが選べます。
@@ -67,9 +68,9 @@
 * 「クイズ一覧取得」関数にあるリストを編集します。  
   <a href="https://gyazo.com/5e53e42df63c0f7d60fbbc6229a607f5"><img src="https://i.gyazo.com/5e53e42df63c0f7d60fbbc6229a607f5.png" alt="クイズ一覧" width="800"/></a>
 * 右側がギザギザになっているブロックには，いくつかのブロックがまとめられています。そのブロックを右クリックし，メニューの「ブロックを展開する」を選択すると表示されます。  
-  <a href="https://gyazo.com/8ccafbecb34bbb4dc66ec2ba31fd1b54"><img src="https://i.gyazo.com/8ccafbecb34bbb4dc66ec2ba31fd1b54.gif" alt="Image from Gyazo" width="800"/></a>
+  <a href="https://gyazo.com/8ccafbecb34bbb4dc66ec2ba31fd1b54"><img src="https://i.gyazo.com/8ccafbecb34bbb4dc66ec2ba31fd1b54.gif" alt="ブロック展開" width="800"/></a>
 * クイズ1問分のデータは以下のようになっています。  
-  <a href="https://gyazo.com/c71fc488cf05ed08c549d6d230aae470"><img src="https://i.gyazo.com/c71fc488cf05ed08c549d6d230aae470.png" alt="Image from Gyazo" width="800"/></a>
+  <a href="https://gyazo.com/f84de1063cabb030e61e87c97d22c220"><img src="https://i.gyazo.com/f84de1063cabb030e61e87c97d22c220.png" alt="クイズ1問分のデータ" width="800"/></a>
 
 ## 励ましてくれるアプリ（`encourage-me-app.xml`）
 
