@@ -1,22 +1,22 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <variables>
-    <variable type="" id="`lN^-L=i}8XB%UcXY-ka">_文字列</variable>
-    <variable type="" id="n.Lp@y94Xx`E$V)w$-zV">_取得する文字数</variable>
-    <variable type="" id="aEQc.?am_zXQumNkvBi8">_探す文字列</variable>
-    <variable type="" id="!:C{u)rfuoJQh1crdl;?">_文字</variable>
-    <variable type="" id="u?9@/execCi0w}9#lQW{">_西暦</variable>
-    <variable type="" id="Sq=myCpSy4iz#+O:PIfp">_聞こえた言葉</variable>
-    <variable type="" id="GOuHYQSLtzM8}xaDZ!_$">バージョン</variable>
-    <variable type="" id="B#IJbzl*MDKACd]-367C">_位置</variable>
-    <variable type="" id="NB.QRTtz9t3{9p7~X9GU">_符号</variable>
-    <variable type="" id="o6?^bokLXu}qeAG?FX8m">_数値</variable>
-    <variable type="" id="#)O/qz|qidB.p[1-P%=?">_数字</variable>
-    <variable type="" id="FtHD)XDCu%AfUlqJz[vk">西暦</variable>
+    <variable type="" id="fhw5I5Us^:d$E,F27.g,">_文字列</variable>
+    <variable type="" id="s7uJjWrIXv}GeWXS,a|/">_取得する文字数</variable>
+    <variable type="" id="6`buvW^H,?_G`0{(tGSs">_探す文字列</variable>
+    <variable type="" id="IxxAFPBQ;Z:{e*Ct]@ez">_文字</variable>
+    <variable type="" id=";eKPGjCo#PedfRHV*PlQ">_西暦</variable>
+    <variable type="" id="j$8y5EV7/i`uhI$ydMEw">_聞こえた言葉</variable>
+    <variable type="" id="4J0[D{12DB*8+n$EJS/g">バージョン</variable>
+    <variable type="" id="kXA6$yRLDfGr;%0!wzlT">_位置</variable>
+    <variable type="" id="~B8Q+xR^u=y*NnQrs@PQ">_符号</variable>
+    <variable type="" id="ALSPt3[@ei{zD-U{lkLq">_数値</variable>
+    <variable type="" id="$4#Psjuh)[QI2g7V{-y}">_数字</variable>
+    <variable type="" id="-O5pMl`gZ_W-b8tudClN">西暦</variable>
   </variables>
   <block type="robohon_startBlocks" id="1Qj1zai9`XTX=Cb,Ib4^" x="-262" y="-387">
     <next>
       <block type="variables_set" id="+/yMf*d%ngFE;G)T+3@@">
-        <field name="VAR" id="GOuHYQSLtzM8}xaDZ!_$" variabletype="">バージョン</field>
+        <field name="VAR" id="4J0[D{12DB*8+n$EJS/g" variabletype="">バージョン</field>
         <value name="VALUE">
           <block type="text" id="st=YYBB6f2}$2{%e^P0X">
             <field name="TEXT">0.0.2</field>
@@ -48,7 +48,7 @@
                       <block type="robohon_listenwaitany" id="Ig[0y{ebBhC/sF/Z65mn">
                         <next>
                           <block type="variables_set" id="$O]:fNc@k-T7so?r2.fM">
-                            <field name="VAR" id="Sq=myCpSy4iz#+O:PIfp" variabletype="">_聞こえた言葉</field>
+                            <field name="VAR" id="j$8y5EV7/i`uhI$ydMEw" variabletype="">_聞こえた言葉</field>
                             <value name="VALUE">
                               <block type="robohon_lastlistenword" id="}_[jbJc3!;!K_VhMSQtL"></block>
                             </value>
@@ -59,7 +59,7 @@
                                     <field name="OP">EQ</field>
                                     <value name="A">
                                       <block type="variables_get" id="ds{+=]uS`;+)7V$s@d8d">
-                                        <field name="VAR" id="Sq=myCpSy4iz#+O:PIfp" variabletype="">_聞こえた言葉</field>
+                                        <field name="VAR" id="j$8y5EV7/i`uhI$ydMEw" variabletype="">_聞こえた言葉</field>
                                       </block>
                                     </value>
                                     <value name="B">
@@ -84,7 +84,7 @@
                                         <mutation items="2"></mutation>
                                         <value name="ADD0">
                                           <block type="variables_get" id="4*{yu,0CXZe*-,nTNQ`W">
-                                            <field name="VAR" id="Sq=myCpSy4iz#+O:PIfp" variabletype="">_聞こえた言葉</field>
+                                            <field name="VAR" id="j$8y5EV7/i`uhI$ydMEw" variabletype="">_聞こえた言葉</field>
                                           </block>
                                         </value>
                                         <value name="ADD1">
@@ -96,7 +96,7 @@
                                     </value>
                                     <next>
                                       <block type="variables_set" id="|R3K$_--4T/%e.FM[D$b">
-                                        <field name="VAR" id="FtHD)XDCu%AfUlqJz[vk" variabletype="">西暦</field>
+                                        <field name="VAR" id="-O5pMl`gZ_W-b8tudClN" variabletype="">西暦</field>
                                         <value name="VALUE">
                                           <block type="procedures_callreturn" id="c8w+_;u-]U;*[QVx_/t]">
                                             <mutation name="西暦を抽出する">
@@ -104,7 +104,7 @@
                                             </mutation>
                                             <value name="ARG0">
                                               <block type="variables_get" id="?VZ?vax=tQZzJi-sI~%V">
-                                                <field name="VAR" id="Sq=myCpSy4iz#+O:PIfp" variabletype="">_聞こえた言葉</field>
+                                                <field name="VAR" id="j$8y5EV7/i`uhI$ydMEw" variabletype="">_聞こえた言葉</field>
                                               </block>
                                             </value>
                                           </block>
@@ -117,7 +117,7 @@
                                                 <field name="OP">NEQ</field>
                                                 <value name="A">
                                                   <block type="variables_get" id="QZ[)mc@uvTnhM[l(!X=b">
-                                                    <field name="VAR" id="FtHD)XDCu%AfUlqJz[vk" variabletype="">西暦</field>
+                                                    <field name="VAR" id="-O5pMl`gZ_W-b8tudClN" variabletype="">西暦</field>
                                                   </block>
                                                 </value>
                                                 <value name="B">
@@ -135,7 +135,7 @@
                                                     </mutation>
                                                     <value name="ARG0">
                                                       <block type="variables_get" id="B=:YNL7Z5iE+W;*ha{oB">
-                                                        <field name="VAR" id="FtHD)XDCu%AfUlqJz[vk" variabletype="">西暦</field>
+                                                        <field name="VAR" id="-O5pMl`gZ_W-b8tudClN" variabletype="">西暦</field>
                                                       </block>
                                                     </value>
                                                   </block>
@@ -150,7 +150,7 @@
                                                         <mutation items="2"></mutation>
                                                         <value name="ADD0">
                                                           <block type="variables_get" id="Ce,ems+B69fkCh3z,Mf?">
-                                                            <field name="VAR" id="FtHD)XDCu%AfUlqJz[vk" variabletype="">西暦</field>
+                                                            <field name="VAR" id="-O5pMl`gZ_W-b8tudClN" variabletype="">西暦</field>
                                                           </block>
                                                         </value>
                                                         <value name="ADD1">
@@ -172,7 +172,7 @@
                                                         <mutation items="2"></mutation>
                                                         <value name="ADD0">
                                                           <block type="variables_get" id="wp6}8]yObd,d.c-ep64k">
-                                                            <field name="VAR" id="FtHD)XDCu%AfUlqJz[vk" variabletype="">西暦</field>
+                                                            <field name="VAR" id="-O5pMl`gZ_W-b8tudClN" variabletype="">西暦</field>
                                                           </block>
                                                         </value>
                                                         <value name="ADD1">
@@ -227,15 +227,15 @@
   </block>
   <block type="procedures_defreturn" id="6*GiEB749=mTPb`ie]K6" collapsed="true" x="413" y="-362">
     <mutation>
-      <arg name="_文字列" varid="`lN^-L=i}8XB%UcXY-ka"></arg>
-      <arg name="_取得する文字数" varid="n.Lp@y94Xx`E$V)w$-zV"></arg>
-      <arg name="_探す文字列" varid="aEQc.?am_zXQumNkvBi8"></arg>
+      <arg name="_文字列" varid="fhw5I5Us^:d$E,F27.g,"></arg>
+      <arg name="_取得する文字数" varid="s7uJjWrIXv}GeWXS,a|/"></arg>
+      <arg name="_探す文字列" varid="6`buvW^H,?_G`0{(tGSs"></arg>
     </mutation>
     <field name="NAME">指定した文字列で終わる文字列の取得</field>
     <comment pinned="false" h="80" w="160">この関数の説明…</comment>
     <statement name="STACK">
       <block type="variables_set" id="a}zBA6jC:of^9qRi?Qb7">
-        <field name="VAR" id="B#IJbzl*MDKACd]-367C" variabletype="">_位置</field>
+        <field name="VAR" id="kXA6$yRLDfGr;%0!wzlT" variabletype="">_位置</field>
         <value name="VALUE">
           <block type="text_indexOf" id="W~lw}yu1uMYT?:7~U)CJ">
             <field name="END">FIRST</field>
@@ -244,7 +244,7 @@
                 <field name="TEXT">3600百年12月25日</field>
               </shadow>
               <block type="variables_get" id="QR{l/k[Z1,u*$o*L]@eE">
-                <field name="VAR" id="`lN^-L=i}8XB%UcXY-ka" variabletype="">_文字列</field>
+                <field name="VAR" id="fhw5I5Us^:d$E,F27.g," variabletype="">_文字列</field>
               </block>
             </value>
             <value name="FIND">
@@ -252,7 +252,7 @@
                 <field name="TEXT">百年</field>
               </shadow>
               <block type="variables_get" id=".gQX~MD+{(do~(,!;7Er">
-                <field name="VAR" id="aEQc.?am_zXQumNkvBi8" variabletype="">_探す文字列</field>
+                <field name="VAR" id="6`buvW^H,?_G`0{(tGSs" variabletype="">_探す文字列</field>
               </block>
             </value>
           </block>
@@ -266,7 +266,7 @@
             <field name="OP">GT</field>
             <value name="A">
               <block type="variables_get" id="|TPwaD2@H8x{rk.usU!_">
-                <field name="VAR" id="B#IJbzl*MDKACd]-367C" variabletype="">_位置</field>
+                <field name="VAR" id="kXA6$yRLDfGr;%0!wzlT" variabletype="">_位置</field>
               </block>
             </value>
             <value name="B">
@@ -286,7 +286,7 @@
                 <field name="TEXT">こんにちは</field>
               </shadow>
               <block type="variables_get" id="e/mwD7W_@l+Fcbyuw^%?">
-                <field name="VAR" id="`lN^-L=i}8XB%UcXY-ka" variabletype="">_文字列</field>
+                <field name="VAR" id="fhw5I5Us^:d$E,F27.g," variabletype="">_文字列</field>
               </block>
             </value>
             <value name="AT1">
@@ -297,7 +297,7 @@
                     <field name="NUM">1</field>
                   </shadow>
                   <block type="variables_get" id="uOoDdF1`B}:%Jp.$.)53">
-                    <field name="VAR" id="B#IJbzl*MDKACd]-367C" variabletype="">_位置</field>
+                    <field name="VAR" id="kXA6$yRLDfGr;%0!wzlT" variabletype="">_位置</field>
                   </block>
                 </value>
                 <value name="B">
@@ -305,7 +305,7 @@
                     <field name="NUM">4</field>
                   </shadow>
                   <block type="variables_get" id="i#-SFg$pS~oDs?8P(GiE">
-                    <field name="VAR" id="n.Lp@y94Xx`E$V)w$-zV" variabletype="">_取得する文字数</field>
+                    <field name="VAR" id="s7uJjWrIXv}GeWXS,a|/" variabletype="">_取得する文字数</field>
                   </block>
                 </value>
               </block>
@@ -318,7 +318,7 @@
                     <field name="NUM">1</field>
                   </shadow>
                   <block type="variables_get" id="!T(F1_spD8JA`NA$$zQa">
-                    <field name="VAR" id="B#IJbzl*MDKACd]-367C" variabletype="">_位置</field>
+                    <field name="VAR" id="kXA6$yRLDfGr;%0!wzlT" variabletype="">_位置</field>
                   </block>
                 </value>
                 <value name="B">
@@ -338,7 +338,7 @@
   </block>
   <block type="procedures_defreturn" id="3[{78ivefLIe1Uo`HFOm" collapsed="true" x="413" y="-337">
     <mutation statements="false">
-      <arg name="_文字" varid="!:C{u)rfuoJQh1crdl;?"></arg>
+      <arg name="_文字" varid="IxxAFPBQ;Z:{e*Ct]@ez"></arg>
     </mutation>
     <field name="NAME">文字を数字に変換</field>
     <comment pinned="false" h="80" w="160">この関数の説明…</comment>
@@ -361,7 +361,7 @@
                 <field name="TEXT">ん</field>
               </shadow>
               <block type="variables_get" id="[n^(m_SeG!ze]#E;pHu3">
-                <field name="VAR" id="!:C{u)rfuoJQh1crdl;?" variabletype="">_文字</field>
+                <field name="VAR" id="IxxAFPBQ;Z:{e*Ct]@ez" variabletype="">_文字</field>
               </block>
             </value>
           </block>
@@ -376,13 +376,13 @@
   </block>
   <block type="procedures_defreturn" id="+vNBqtuQnbi8QB6d#0))" collapsed="true" x="413" y="-312">
     <mutation>
-      <arg name="_文字列" varid="`lN^-L=i}8XB%UcXY-ka"></arg>
+      <arg name="_文字列" varid="fhw5I5Us^:d$E,F27.g,"></arg>
     </mutation>
     <field name="NAME">文字列を数値に変換</field>
     <comment pinned="false" h="80" w="160">この関数の説明…</comment>
     <statement name="STACK">
       <block type="variables_set" id="~#+}eYc.cy{6XCh%Xfes">
-        <field name="VAR" id="NB.QRTtz9t3{9p7~X9GU" variabletype="">_符号</field>
+        <field name="VAR" id="~B8Q+xR^u=y*NnQrs@PQ" variabletype="">_符号</field>
         <value name="VALUE">
           <block type="math_number" id="qR#qDI1J~xq/{0Vw@tQA">
             <field name="NUM">1</field>
@@ -402,7 +402,7 @@
                         <field name="TEXT">こんにちは</field>
                       </shadow>
                       <block type="variables_get" id="5MPtF-;Ra3TlN`}C8YbY">
-                        <field name="VAR" id="`lN^-L=i}8XB%UcXY-ka" variabletype="">_文字列</field>
+                        <field name="VAR" id="fhw5I5Us^:d$E,F27.g," variabletype="">_文字列</field>
                       </block>
                     </value>
                   </block>
@@ -416,7 +416,7 @@
             </value>
             <statement name="DO0">
               <block type="variables_set" id="Z}BO;+Fw2sul7#k^~i10">
-                <field name="VAR" id="NB.QRTtz9t3{9p7~X9GU" variabletype="">_符号</field>
+                <field name="VAR" id="~B8Q+xR^u=y*NnQrs@PQ" variabletype="">_符号</field>
                 <value name="VALUE">
                   <block type="math_number" id="L-j`hr.r]TmzRs}J^yTW">
                     <field name="NUM">-1</field>
@@ -424,7 +424,7 @@
                 </value>
                 <next>
                   <block type="variables_set" id="iDarw$[:-rWGY/Nw^+lD">
-                    <field name="VAR" id="`lN^-L=i}8XB%UcXY-ka" variabletype="">_文字列</field>
+                    <field name="VAR" id="fhw5I5Us^:d$E,F27.g," variabletype="">_文字列</field>
                     <value name="VALUE">
                       <block type="text_getSubstring" id="(V=C!S/]-DJeUEq)1UOr">
                         <mutation at1="true" at2="false"></mutation>
@@ -435,7 +435,7 @@
                             <field name="TEXT">こんにちは</field>
                           </shadow>
                           <block type="variables_get" id="0)MeNaW?yqf3^gs}CUOz">
-                            <field name="VAR" id="`lN^-L=i}8XB%UcXY-ka" variabletype="">_文字列</field>
+                            <field name="VAR" id="fhw5I5Us^:d$E,F27.g," variabletype="">_文字列</field>
                           </block>
                         </value>
                         <value name="AT1">
@@ -451,7 +451,7 @@
             </statement>
             <next>
               <block type="variables_set" id="7%A+E%w(e%kXCdF30cR6">
-                <field name="VAR" id="o6?^bokLXu}qeAG?FX8m" variabletype="">_数値</field>
+                <field name="VAR" id="ALSPt3[@ei{zD-U{lkLq" variabletype="">_数値</field>
                 <value name="VALUE">
                   <block type="math_number" id="^VK%y.Vk{[U!A8j)l3s:">
                     <field name="NUM">0</field>
@@ -459,7 +459,7 @@
                 </value>
                 <next>
                   <block type="controls_for" id="y~x$gUEWH9h/Y%1%VpHx">
-                    <field name="VAR" id="B#IJbzl*MDKACd]-367C" variabletype="">_位置</field>
+                    <field name="VAR" id="kXA6$yRLDfGr;%0!wzlT" variabletype="">_位置</field>
                     <value name="FROM">
                       <shadow type="math_number" id="%DV(y1W(9.D7#aqDbB2e">
                         <field name="NUM">1</field>
@@ -475,7 +475,7 @@
                             <field name="TEXT">こんにちは</field>
                           </shadow>
                           <block type="variables_get" id="w.R2%2kbmj|a-tCA_S9r">
-                            <field name="VAR" id="`lN^-L=i}8XB%UcXY-ka" variabletype="">_文字列</field>
+                            <field name="VAR" id="fhw5I5Us^:d$E,F27.g," variabletype="">_文字列</field>
                           </block>
                         </value>
                       </block>
@@ -487,7 +487,7 @@
                     </value>
                     <statement name="DO">
                       <block type="variables_set" id="QJI.^7O$NDnxD[Jfn/wq">
-                        <field name="VAR" id="!:C{u)rfuoJQh1crdl;?" variabletype="">_文字</field>
+                        <field name="VAR" id="IxxAFPBQ;Z:{e*Ct]@ez" variabletype="">_文字</field>
                         <value name="VALUE">
                           <block type="text_charAt" id="`+v#DnSDAb|e`3}+TEMS">
                             <mutation at="true"></mutation>
@@ -497,12 +497,12 @@
                                 <field name="TEXT">こんにちは</field>
                               </shadow>
                               <block type="variables_get" id="V5Si_u#o(D#z`Zfx/#eM">
-                                <field name="VAR" id="`lN^-L=i}8XB%UcXY-ka" variabletype="">_文字列</field>
+                                <field name="VAR" id="fhw5I5Us^:d$E,F27.g," variabletype="">_文字列</field>
                               </block>
                             </value>
                             <value name="AT">
                               <block type="variables_get" id="3?#Uvdrm2Bs??.t0)opq">
-                                <field name="VAR" id="B#IJbzl*MDKACd]-367C" variabletype="">_位置</field>
+                                <field name="VAR" id="kXA6$yRLDfGr;%0!wzlT" variabletype="">_位置</field>
                               </block>
                             </value>
                           </block>
@@ -514,7 +514,7 @@
                                 <field name="OP">EQ</field>
                                 <value name="A">
                                   <block type="variables_get" id="X:gX.H$0cpk{]mv2-fb^">
-                                    <field name="VAR" id="!:C{u)rfuoJQh1crdl;?" variabletype="">_文字</field>
+                                    <field name="VAR" id="IxxAFPBQ;Z:{e*Ct]@ez" variabletype="">_文字</field>
                                   </block>
                                 </value>
                                 <value name="B">
@@ -531,7 +531,7 @@
                             </statement>
                             <next>
                               <block type="variables_set" id="DcOe{!zG@t3dT`!)4T?q">
-                                <field name="VAR" id="o6?^bokLXu}qeAG?FX8m" variabletype="">_数値</field>
+                                <field name="VAR" id="ALSPt3[@ei{zD-U{lkLq" variabletype="">_数値</field>
                                 <value name="VALUE">
                                   <block type="math_arithmetic" id="|;:]ozETvyIJmj#,x`l?">
                                     <field name="OP">MULTIPLY</field>
@@ -540,7 +540,7 @@
                                         <field name="NUM">1</field>
                                       </shadow>
                                       <block type="variables_get" id="(1B]6)9^m/Hw3Fta)ySZ">
-                                        <field name="VAR" id="o6?^bokLXu}qeAG?FX8m" variabletype="">_数値</field>
+                                        <field name="VAR" id="ALSPt3[@ei{zD-U{lkLq" variabletype="">_数値</field>
                                       </block>
                                     </value>
                                     <value name="B">
@@ -552,7 +552,7 @@
                                 </value>
                                 <next>
                                   <block type="variables_set" id="mTG(fSz:jX5S:;wG+WMP">
-                                    <field name="VAR" id="#)O/qz|qidB.p[1-P%=?" variabletype="">_数字</field>
+                                    <field name="VAR" id="$4#Psjuh)[QI2g7V{-y}" variabletype="">_数字</field>
                                     <value name="VALUE">
                                       <block type="procedures_callreturn" id="OKFu*XlXa-}qK[}OIi!@">
                                         <mutation name="文字を数字に変換">
@@ -560,7 +560,7 @@
                                         </mutation>
                                         <value name="ARG0">
                                           <block type="variables_get" id="w@aV:u.[[M`/MU/G^MB[">
-                                            <field name="VAR" id="!:C{u)rfuoJQh1crdl;?" variabletype="">_文字</field>
+                                            <field name="VAR" id="IxxAFPBQ;Z:{e*Ct]@ez" variabletype="">_文字</field>
                                           </block>
                                         </value>
                                       </block>
@@ -573,7 +573,7 @@
                                             <field name="OP">EQ</field>
                                             <value name="A">
                                               <block type="variables_get" id="fHuNBa~Ey:XAw=Onj~zO">
-                                                <field name="VAR" id="#)O/qz|qidB.p[1-P%=?" variabletype="">_数字</field>
+                                                <field name="VAR" id="$4#Psjuh)[QI2g7V{-y}" variabletype="">_数字</field>
                                               </block>
                                             </value>
                                             <value name="B">
@@ -584,13 +584,11 @@
                                           </block>
                                         </value>
                                         <value name="VALUE">
-                                          <block type="math_number" id="AY$(E6M-9ui;h5zq]Suz">
-                                            <field name="NUM">-1</field>
-                                          </block>
+                                          <block type="logic_null" id=":4y?`GUMKFw2Zd!,o0rQ"></block>
                                         </value>
                                         <next>
                                           <block type="variables_set" id="T,UH.2x]H8d_j7wbMjlX">
-                                            <field name="VAR" id="o6?^bokLXu}qeAG?FX8m" variabletype="">_数値</field>
+                                            <field name="VAR" id="ALSPt3[@ei{zD-U{lkLq" variabletype="">_数値</field>
                                             <value name="VALUE">
                                               <block type="math_arithmetic" id="7Z?:WR[{yj]ANJRZFNn?">
                                                 <field name="OP">ADD</field>
@@ -599,7 +597,7 @@
                                                     <field name="NUM">1</field>
                                                   </shadow>
                                                   <block type="variables_get" id="PnEEhft8*IPr`rC*9Yg_">
-                                                    <field name="VAR" id="o6?^bokLXu}qeAG?FX8m" variabletype="">_数値</field>
+                                                    <field name="VAR" id="ALSPt3[@ei{zD-U{lkLq" variabletype="">_数値</field>
                                                   </block>
                                                 </value>
                                                 <value name="B">
@@ -607,7 +605,7 @@
                                                     <field name="NUM">10</field>
                                                   </shadow>
                                                   <block type="variables_get" id="~zD~TQ13I76A(462SP|f">
-                                                    <field name="VAR" id="#)O/qz|qidB.p[1-P%=?" variabletype="">_数字</field>
+                                                    <field name="VAR" id="$4#Psjuh)[QI2g7V{-y}" variabletype="">_数字</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -640,7 +638,7 @@
             <field name="NUM">1</field>
           </shadow>
           <block type="variables_get" id="G$cyGIV+?g,,`mR,;pfB">
-            <field name="VAR" id="o6?^bokLXu}qeAG?FX8m" variabletype="">_数値</field>
+            <field name="VAR" id="ALSPt3[@ei{zD-U{lkLq" variabletype="">_数値</field>
           </block>
         </value>
         <value name="B">
@@ -648,7 +646,7 @@
             <field name="NUM">1</field>
           </shadow>
           <block type="variables_get" id="Yjs`KzS:=qjz+Ob=#8ci">
-            <field name="VAR" id="NB.QRTtz9t3{9p7~X9GU" variabletype="">_符号</field>
+            <field name="VAR" id="~B8Q+xR^u=y*NnQrs@PQ" variabletype="">_符号</field>
           </block>
         </value>
       </block>
@@ -656,7 +654,7 @@
   </block>
   <block type="procedures_defreturn" id="BqS@5V.!xWzxPf:eE?;s" collapsed="true" x="413" y="-287">
     <mutation statements="false">
-      <arg name="_西暦" varid="u?9@/execCi0w}9#lQW{"></arg>
+      <arg name="_西暦" varid=";eKPGjCo#PedfRHV*PlQ"></arg>
     </mutation>
     <field name="NAME">うるう年かどうか</field>
     <comment pinned="false" h="80" w="160">この関数の説明…</comment>
@@ -673,7 +671,7 @@
                     <field name="NUM">64</field>
                   </shadow>
                   <block type="variables_get" id="zGQrtFVSiXT#Eh*f;FJ!">
-                    <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                    <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                   </block>
                 </value>
                 <value name="DIVISOR">
@@ -703,7 +701,7 @@
                         <field name="NUM">64</field>
                       </shadow>
                       <block type="variables_get" id="Fqe!2amO~hPTSh~t=H}+">
-                        <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                        <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                       </block>
                     </value>
                     <value name="DIVISOR">
@@ -730,7 +728,7 @@
                         <field name="NUM">64</field>
                       </shadow>
                       <block type="variables_get" id="%i||gplem()sO^3@(3FP">
-                        <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                        <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                       </block>
                     </value>
                     <value name="DIVISOR">
@@ -754,13 +752,13 @@
   </block>
   <block type="procedures_defreturn" id="uyz8Uz{c$~$b@89zlPJ=" collapsed="true" x="413" y="-262">
     <mutation>
-      <arg name="_聞こえた言葉" varid="Sq=myCpSy4iz#+O:PIfp"></arg>
+      <arg name="_聞こえた言葉" varid="j$8y5EV7/i`uhI$ydMEw"></arg>
     </mutation>
     <field name="NAME">西暦を抽出する</field>
     <comment pinned="false" h="117" w="222">西暦を聞きとる。聞きとれた場合は年（数値），聞きとれなかった場合や年ではなかった場合はnullが返る</comment>
     <statement name="STACK">
       <block type="variables_set" id="QV-7LD3@QM!YH4cfxZ.6">
-        <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+        <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
         <value name="VALUE">
           <block type="procedures_callreturn" id="I1%g2qD(XF|a)ax9|pS#">
             <mutation name="指定した文字列で終わる文字列の取得">
@@ -770,7 +768,7 @@
             </mutation>
             <value name="ARG0">
               <block type="variables_get" id="q$Z|;LXCMp)VLRKJ@gH7">
-                <field name="VAR" id="Sq=myCpSy4iz#+O:PIfp" variabletype="">_聞こえた言葉</field>
+                <field name="VAR" id="j$8y5EV7/i`uhI$ydMEw" variabletype="">_聞こえた言葉</field>
               </block>
             </value>
             <value name="ARG1">
@@ -792,7 +790,7 @@
                 <field name="OP">NEQ</field>
                 <value name="A">
                   <block type="variables_get" id="ck.=q*nJPWY+!14OTVTL">
-                    <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                    <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                   </block>
                 </value>
                 <value name="B">
@@ -802,7 +800,7 @@
             </value>
             <statement name="DO0">
               <block type="variables_set" id="v5(PoPXuepB~x8n.Mlp-">
-                <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                 <value name="VALUE">
                   <block type="procedures_callreturn" id="hfzigo]cj;t/C1(1o_@@">
                     <mutation name="文字列を数値に変換">
@@ -810,7 +808,7 @@
                     </mutation>
                     <value name="ARG0">
                       <block type="variables_get" id="A%Fr7qAFcx:e5=zlzn^{">
-                        <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                        <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                       </block>
                     </value>
                   </block>
@@ -823,13 +821,11 @@
                         <field name="OP">NEQ</field>
                         <value name="A">
                           <block type="variables_get" id="1WK{DVDsZe~UWz=Q7H$C">
-                            <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                            <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                           </block>
                         </value>
                         <value name="B">
-                          <block type="math_number" id="s)4~0mp=njn(`-${y4X3">
-                            <field name="NUM">-1</field>
-                          </block>
+                          <block type="logic_null" id="iAKWl3`w2K;`Z.$zYNpY"></block>
                         </value>
                       </block>
                     </value>
@@ -847,7 +843,7 @@
                                 <field name="NUM">1</field>
                               </shadow>
                               <block type="variables_get" id="L$7Dds!2Yh)vgI#=j-N)">
-                                <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                                <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                               </block>
                             </value>
                             <value name="B">
@@ -860,7 +856,7 @@
                                     <field name="NUM">64</field>
                                   </shadow>
                                   <block type="variables_get" id="pg$*uK]=TJy:VY4mCx_?">
-                                    <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                                    <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                                   </block>
                                 </value>
                                 <value name="DIVISOR">
@@ -888,7 +884,7 @@
                                     <field name="NUM">64</field>
                                   </shadow>
                                   <block type="variables_get" id="yq`q9(p0V;fR4FJT/3Q=">
-                                    <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                                    <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                                   </block>
                                 </value>
                                 <value name="DIVISOR">
@@ -913,7 +909,7 @@
             </statement>
             <next>
               <block type="variables_set" id="_)Umi@;wj,Vdy3{e*yox">
-                <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                 <value name="VALUE">
                   <block type="procedures_callreturn" id=";_|Y9@q!7:u}TBE(^kMM">
                     <mutation name="指定した文字列で終わる文字列の取得">
@@ -923,7 +919,7 @@
                     </mutation>
                     <value name="ARG0">
                       <block type="variables_get" id=",Xa(BhPg)S@U6A7npU$,">
-                        <field name="VAR" id="Sq=myCpSy4iz#+O:PIfp" variabletype="">_聞こえた言葉</field>
+                        <field name="VAR" id="j$8y5EV7/i`uhI$ydMEw" variabletype="">_聞こえた言葉</field>
                       </block>
                     </value>
                     <value name="ARG1">
@@ -945,7 +941,7 @@
                         <field name="OP">NEQ</field>
                         <value name="A">
                           <block type="variables_get" id="[o^bR}/Ths(0#+K!dG3j">
-                            <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                            <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                           </block>
                         </value>
                         <value name="B">
@@ -955,7 +951,7 @@
                     </value>
                     <statement name="DO0">
                       <block type="variables_set" id="F4h27a^9}q)puGSR5D_c">
-                        <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                        <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                         <value name="VALUE">
                           <block type="procedures_callreturn" id="/LI2%PO_X{cJq?eGB(Y@">
                             <mutation name="文字列を数値に変換">
@@ -963,7 +959,7 @@
                             </mutation>
                             <value name="ARG0">
                               <block type="variables_get" id="xV6LU|w#Aeu=]j~G[DhA">
-                                <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                                <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                               </block>
                             </value>
                           </block>
@@ -976,19 +972,17 @@
                                 <field name="OP">NEQ</field>
                                 <value name="A">
                                   <block type="variables_get" id="P:q;_[PPm*]-f:$eu@Sq">
-                                    <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                                    <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                                   </block>
                                 </value>
                                 <value name="B">
-                                  <block type="math_number" id=";ov%HmwQ!Cuf31*7[(Mw">
-                                    <field name="NUM">-1</field>
-                                  </block>
+                                  <block type="logic_null" id="{PII_xE`Xfx[CM3SaC{m"></block>
                                 </value>
                               </block>
                             </value>
                             <value name="VALUE">
                               <block type="variables_get" id="%z0DhCte?k;zutp$^-i7">
-                                <field name="VAR" id="u?9@/execCi0w}9#lQW{" variabletype="">_西暦</field>
+                                <field name="VAR" id=";eKPGjCo#PedfRHV*PlQ" variabletype="">_西暦</field>
                               </block>
                             </value>
                           </block>
