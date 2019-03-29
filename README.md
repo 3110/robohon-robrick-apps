@@ -70,6 +70,8 @@
   <a href="https://gyazo.com/49f3cd17f96d7dba0ffb7951f80f49fe"><img src="https://i.gyazo.com/49f3cd17f96d7dba0ffb7951f80f49fe.png" alt="クイズ一覧" width="800"/></a>
 * 右側がギザギザになっているブロックには，いくつかのブロックがまとめられています。そのブロックを右クリックし，メニューの「ブロックを展開する」を選択すると表示されます。  
   <a href="https://gyazo.com/a848d0cc5408e424e5ecbdb9a8f04a63"><img src="https://i.gyazo.com/a848d0cc5408e424e5ecbdb9a8f04a63.gif" alt="ブロック展開" width="800"/></a>
+* クイズを追加したい位置に「値」をドラッグアンドドロップし，関数から「3択クイズ生成」を選択し，値を追加した位置にくっつけます。質問，正解，答え2，答え3，解説にテキストにある「“ ”」ブロックをくっつけます（1つくっつけて，それをコピーしてさらにくっつけていきます）。それぞれに文言を追加すればクイズが追加できます。
+  <a href="https://gyazo.com/fc319770cd2c6719f416929a2acc7a61"><img src="https://i.gyazo.com/fc319770cd2c6719f416929a2acc7a61.gif" alt="クイズ追加" width="800"/></a>
 
 ## 励ましてくれるアプリ（`encourage-me-app.xml`）
 
