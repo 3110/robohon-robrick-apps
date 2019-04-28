@@ -2,13 +2,14 @@
 
 ## アプリ一覧
 
-* [クイズアプリ](https://github.com/3110/robohon-robrick-apps#%E3%82%AF%E3%82%A4%E3%82%BA%E3%82%A2%E3%83%97%E3%83%AAquiz-appxml)（`quiz-app.xml`）
-* [励ましてくれるアプリ](https://github.com/3110/robohon-robrick-apps#%E5%8A%B1%E3%81%BE%E3%81%97%E3%81%A6%E3%81%8F%E3%82%8C%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AAencourage-me-appxml)（`encourage-me-app.xml`）
-* [うるう年を教えてくれるアプリ](https://github.com/3110/robohon-robrick-apps#%E3%81%86%E3%82%8B%E3%81%86%E5%B9%B4%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%82%8C%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AAleap-year-appxml)（`leap-year-app.xml`）
+* [クイズアプリ](https://github.com/3110/robohon-robrick#%E3%82%AF%E3%82%A4%E3%82%BA%E3%82%A2%E3%83%97%E3%83%AAquiz-appxml)（`quiz-app.xml`）
+* [励ましてくれるアプリ](https://github.com/3110/robohon-robrick#%E5%8A%B1%E3%81%BE%E3%81%97%E3%81%A6%E3%81%8F%E3%82%8C%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AAencourage-me-appxml)（`encourage-me-app.xml`）
+* [うるう年を教えてくれるアプリ](https://github.com/3110/robohon-robrick#%E3%81%86%E3%82%8B%E3%81%86%E5%B9%B4%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%82%8C%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AAleap-year-appxml)（`leap-year-app.xml`）
+* [思い出アプリ](https://github.com/3110/robohon-robrick-apps/#%E6%80%9D%E3%81%84%E5%87%BA%E3%82%A2%E3%83%97%E3%83%AAmemories-appxml)(`memories-app.xml`)
 
 ## インストール方法
 
-* [ZIPファイル](https://github.com/3110/robohon-robrick-apps/archive/v0.0.5.zip)をダウンロードします。
+* [ZIPファイル](https://github.com/3110/robohon-robrick/archive/v0.0.6.zip)をダウンロードします。
 * ダウンロードしたZIPファイルを適当なフォルダに展開します。
 * ロボホンでロブリックアプリを起動します。  
   <a href="https://gyazo.com/4c6059c6ee7deace2185d194e2587e22"><img src="https://i.gyazo.com/4c6059c6ee7deace2185d194e2587e22.png" alt="ロブリックアプリアイコン" width="180"/></a>
@@ -90,3 +91,15 @@
 
 * 「2020年」というように西暦を言うと，その年がうるう年かどうかを教えてくれます。
 * 「終わり」というとアプリを終了します。
+
+## 思い出アプリ（`memories-app.xml`)
+
+### 特徴
+
+* 日付（2019年3月30日）を言うと，思い出とともに経過日数を教えてくれます。
+* 未来の思い出も登録しておくことができます。
+* すべての思い出を話し終わったとき，もしくは，「次の思い出も聞く？」と聞かれたときに「いいえ」と答えるとアプリが終了します。
+
+### カスタマイズ
+
+* 「思い出一覧取得」関数にあるリストに「思い出生成」関数を追加して，思い出を増やしてみましょう。
