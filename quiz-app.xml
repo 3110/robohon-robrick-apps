@@ -11,7 +11,6 @@
     <variable type="" id="+|ZF=IH8//lPS9Guv]$U">_出題数</variable>
     <variable type="" id="Fd/6Lx!3{qpf^^M~bzIk">_ランダム出題</variable>
     <variable type="" id="Q[3$NujOMtRl5!ez@.pk">_聞き返す回数</variable>
-    <variable type="" id=";,R))_E=/itkB9#KcK#o">_問題番号</variable>
     <variable type="" id="$9l71^@n~ktMLSz_/Hc7">_質問</variable>
     <variable type="" id="Ua.mDW_g7q8^7g(iD@1q">_選択肢</variable>
     <variable type="" id="}hO[#e`[C{jSg4acG?Se">_解説</variable>
@@ -757,7 +756,7 @@
       </block>
     </value>
   </block>
-  <block type="procedures_defnoreturn" id="JMO6/sk|8h:z]DN={pHj" collapsed="true" x="-3212" y="-5113">
+  <block type="procedures_defnoreturn" id="JMO6/sk|8h:z]DN={pHj" collapsed="true" x="-3212" y="-5112">
     <mutation>
       <arg name="_クイズ名" varid="|]U_Nh@=uaIAcVKz6vK7"></arg>
       <arg name="_クイズ一覧" varid="7k4-F{i%l+;Pu=tvwH/`"></arg>
@@ -970,18 +969,12 @@
                                                             <value name="IF0">
                                                               <block type="procedures_callreturn" id="o!kWV,EL]TdgQp8M%vAR">
                                                                 <mutation name="N択クイズ">
-                                                                  <arg name="_問題番号"></arg>
                                                                   <arg name="_質問"></arg>
                                                                   <arg name="_選択肢"></arg>
                                                                   <arg name="_解説"></arg>
                                                                   <arg name="_聞き返す回数"></arg>
                                                                 </mutation>
                                                                 <value name="ARG0">
-                                                                  <block type="variables_get" id="uDAEi[~5M(r.6kM_*KHJ">
-                                                                    <field name="VAR" id="lMKbxkLng=~mQ4y/i4w3" variabletype="">_問題数</field>
-                                                                  </block>
-                                                                </value>
-                                                                <value name="ARG1">
                                                                   <block type="lists_getIndex" id="%=JcTYrrFHZS1.{RDlFR">
                                                                     <mutation statement="false" at="true"></mutation>
                                                                     <field name="MODE">GET</field>
@@ -998,7 +991,7 @@
                                                                     </value>
                                                                   </block>
                                                                 </value>
-                                                                <value name="ARG2">
+                                                                <value name="ARG1">
                                                                   <block type="lists_getIndex" id="!.h?fP#0~c?dP:,.;vMb">
                                                                     <mutation statement="false" at="true"></mutation>
                                                                     <field name="MODE">GET</field>
@@ -1015,7 +1008,7 @@
                                                                     </value>
                                                                   </block>
                                                                 </value>
-                                                                <value name="ARG3">
+                                                                <value name="ARG2">
                                                                   <block type="lists_getIndex" id="TA6^PKP~YUW2O,g^.ed2">
                                                                     <mutation statement="false" at="true"></mutation>
                                                                     <field name="MODE">GET</field>
@@ -1032,7 +1025,7 @@
                                                                     </value>
                                                                   </block>
                                                                 </value>
-                                                                <value name="ARG4">
+                                                                <value name="ARG3">
                                                                   <block type="variables_get" id="p^M9yI6-s0v*W?gEGfRJ">
                                                                     <field name="VAR" id="Q[3$NujOMtRl5!ez@.pk" variabletype="">_聞き返す回数</field>
                                                                   </block>
@@ -1152,9 +1145,8 @@
       </block>
     </statement>
   </block>
-  <block type="procedures_defreturn" id="G=3]G3tOT4n:bjOV:+Oe" collapsed="true" x="-3213" y="-5088">
+  <block type="procedures_defreturn" id="G=3]G3tOT4n:bjOV:+Oe" collapsed="true" x="-3212" y="-5088">
     <mutation>
-      <arg name="_問題番号" varid=";,R))_E=/itkB9#KcK#o"></arg>
       <arg name="_質問" varid="$9l71^@n~ktMLSz_/Hc7"></arg>
       <arg name="_選択肢" varid="Ua.mDW_g7q8^7g(iD@1q"></arg>
       <arg name="_解説" varid="}hO[#e`[C{jSg4acG?Se"></arg>
