@@ -7,7 +7,7 @@
 - [うるう年を教えてくれるアプリ](https://github.com/3110/robohon-robrick#%E3%81%86%E3%82%8B%E3%81%86%E5%B9%B4%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%82%8C%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AAleap-year-appxml)（`leap-year-app.xml`）
 - [思い出アプリ](https://github.com/3110/robohon-robrick-apps/#%E6%80%9D%E3%81%84%E5%87%BA%E3%82%A2%E3%83%97%E3%83%AAmemories-appxml)(`memories-app.xml`)
 
-- ルーレット体操（`roulette-exercises.xml`)
+- [ルーレット体操](https://github.com/3110/robohon-robrick-apps#%E3%83%AB%E3%83%BC%E3%83%AC%E3%83%83%E3%83%88%E4%BD%93%E6%93%8D%E3%82%A2%E3%83%97%E3%83%AAroulette-exercisesxml)（`roulette-exercises.xml`)
 
 ## インストール方法
 
