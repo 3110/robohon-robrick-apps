@@ -1,6 +1,7 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <variables>
     <variable type="" id="+5DwHd6a_-:Q-R~=0i6J">_ダンス名</variable>
+    <variable type="" id="OL4vwj|+MST1Nm2jb4Fl">バージョン</variable>
     <variable type="" id="7.pqruY9D)2Vy^^Ha]R2">ダンスリスト</variable>
     <variable type="" id="0GoL/cxPEz-IZr-.kJ0[">体操を選択する発話リスト</variable>
     <variable type="" id="~`Yd8iEB1{C[6WuPfP@y">選択する発話</variable>
@@ -12,99 +13,109 @@
       </shadow>
     </value>
     <next>
-      <block type="variables_set" id="$c:PlQ61s!m#wR_x#ts5">
-        <field name="VAR" id="7.pqruY9D)2Vy^^Ha]R2" variabletype="">ダンスリスト</field>
+      <block type="variables_set" id="sc25M=JMR_NOo94}r`^4">
+        <field name="VAR" id="OL4vwj|+MST1Nm2jb4Fl" variabletype="">バージョン</field>
         <value name="VALUE">
-          <block type="lists_create_with" id="l,Yoks?cw.6S%k#no{55">
-            <mutation items="3"></mutation>
-            <value name="ADD0">
-              <block type="text" id="}jz]hJp%VZ[+.WB35qEd">
-                <field name="TEXT">ロボホン体操</field>
-              </block>
-            </value>
-            <value name="ADD1">
-              <block type="text" id="DZ;eh=Xeo9(.{xxjLXzV">
-                <field name="TEXT">ラジオ体操</field>
-              </block>
-            </value>
-            <value name="ADD2">
-              <block type="text" id="0BbsV73S5+l~(nJs(}{q">
-                <field name="TEXT">ロボホンズブートキャンプ</field>
-              </block>
-            </value>
+          <block type="text" id="V3P~zZ(Ue?OcQe0/{q5(">
+            <field name="TEXT">0.0.1</field>
           </block>
         </value>
         <next>
-          <block type="variables_set" id="kS$pb;`1^j~JYnFCct-|">
-            <field name="VAR" id="0GoL/cxPEz-IZr-.kJ0[" variabletype="">体操を選択する発話リスト</field>
+          <block type="variables_set" id="$c:PlQ61s!m#wR_x#ts5">
+            <field name="VAR" id="7.pqruY9D)2Vy^^Ha]R2" variabletype="">ダンスリスト</field>
             <value name="VALUE">
-              <block type="lists_create_with" id="S3A78mdP(0~`O_)n~h~-">
-                <mutation items="2"></mutation>
+              <block type="lists_create_with" id="l,Yoks?cw.6S%k#no{55">
+                <mutation items="3"></mutation>
                 <value name="ADD0">
-                  <block type="text" id="ec|aQ2)k;0;ywXT^`]q:">
-                    <field name="TEXT">まずは，どれにしようかなぁ。</field>
+                  <block type="text" id="}jz]hJp%VZ[+.WB35qEd">
+                    <field name="TEXT">ロボホン体操</field>
                   </block>
                 </value>
                 <value name="ADD1">
-                  <block type="text" id="ZC_Wq3e1Z56hzmqm^]/H">
-                    <field name="TEXT">次は，どうしようかなぁ</field>
+                  <block type="text" id="DZ;eh=Xeo9(.{xxjLXzV">
+                    <field name="TEXT">ラジオ体操</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="0BbsV73S5+l~(nJs(}{q">
+                    <field name="TEXT">ロボホンズブートキャンプ</field>
                   </block>
                 </value>
               </block>
             </value>
             <next>
-              <block type="robohon_speak" id="`0%=B;[;w},@)ORKY}}f">
-                <value name="WORD">
-                  <shadow type="text" id="l)QA9um7IgHUJOmFgYEU">
-                    <field name="TEXT">うん！何をやるか，僕が考えるね！</field>
-                  </shadow>
-                </value>
-                <next>
-                  <block type="controls_forEach" id="E;TRs}-6r%Yyvf}YNA/p">
-                    <field name="VAR" id="~`Yd8iEB1{C[6WuPfP@y" variabletype="">選択する発話</field>
-                    <value name="LIST">
-                      <block type="variables_get" id="V+jYEg~LQY2qzY$-ltQ)">
-                        <field name="VAR" id="0GoL/cxPEz-IZr-.kJ0[" variabletype="">体操を選択する発話リスト</field>
+              <block type="variables_set" id="kS$pb;`1^j~JYnFCct-|">
+                <field name="VAR" id="0GoL/cxPEz-IZr-.kJ0[" variabletype="">体操を選択する発話リスト</field>
+                <value name="VALUE">
+                  <block type="lists_create_with" id="S3A78mdP(0~`O_)n~h~-">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="ec|aQ2)k;0;ywXT^`]q:">
+                        <field name="TEXT">まずは，どれにしようかなぁ。</field>
                       </block>
                     </value>
-                    <statement name="DO">
-                      <block type="robohon_speak" id="Dr_HRhzjZa_@/NFvAed_">
-                        <value name="WORD">
-                          <shadow type="text" id="4:M^xyRe?+-lq#%~ME|Z">
-                            <field name="TEXT">こんにちは</field>
-                          </shadow>
-                          <block type="variables_get" id="hF!WWh$kAPFBn-)ssJ#P">
-                            <field name="VAR" id="~`Yd8iEB1{C[6WuPfP@y" variabletype="">選択する発話</field>
+                    <value name="ADD1">
+                      <block type="text" id="ZC_Wq3e1Z56hzmqm^]/H">
+                        <field name="TEXT">次は，どうしようかなぁ</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="robohon_speak" id="`0%=B;[;w},@)ORKY}}f">
+                    <value name="WORD">
+                      <shadow type="text" id="l)QA9um7IgHUJOmFgYEU">
+                        <field name="TEXT">うん！何をやるか，僕が考えるね！</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="controls_forEach" id="E;TRs}-6r%Yyvf}YNA/p">
+                        <field name="VAR" id="~`Yd8iEB1{C[6WuPfP@y" variabletype="">選択する発話</field>
+                        <value name="LIST">
+                          <block type="variables_get" id="V+jYEg~LQY2qzY$-ltQ)">
+                            <field name="VAR" id="0GoL/cxPEz-IZr-.kJ0[" variabletype="">体操を選択する発話リスト</field>
                           </block>
                         </value>
-                        <next>
-                          <block type="procedures_callnoreturn" id="qior)I?P90{(h@,i^R-G">
-                            <mutation name="踊る">
-                              <arg name="_ダンス名"></arg>
-                            </mutation>
-                            <value name="ARG0">
-                              <block type="lists_getIndex" id="PD%?4@I8~m5m[;tN`*Y9">
-                                <mutation statement="false" at="false"></mutation>
-                                <field name="MODE">GET_REMOVE</field>
-                                <field name="WHERE">RANDOM</field>
-                                <value name="VALUE">
-                                  <block type="variables_get" id="o}=^2%^-pr2ESx!:MC_F">
-                                    <field name="VAR" id="7.pqruY9D)2Vy^^Ha]R2" variabletype="">ダンスリスト</field>
+                        <statement name="DO">
+                          <block type="robohon_speak" id="Dr_HRhzjZa_@/NFvAed_">
+                            <value name="WORD">
+                              <shadow type="text" id="4:M^xyRe?+-lq#%~ME|Z">
+                                <field name="TEXT">こんにちは</field>
+                              </shadow>
+                              <block type="variables_get" id="hF!WWh$kAPFBn-)ssJ#P">
+                                <field name="VAR" id="~`Yd8iEB1{C[6WuPfP@y" variabletype="">選択する発話</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="procedures_callnoreturn" id="qior)I?P90{(h@,i^R-G">
+                                <mutation name="踊る">
+                                  <arg name="_ダンス名"></arg>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block type="lists_getIndex" id="PD%?4@I8~m5m[;tN`*Y9">
+                                    <mutation statement="false" at="false"></mutation>
+                                    <field name="MODE">GET_REMOVE</field>
+                                    <field name="WHERE">RANDOM</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="o}=^2%^-pr2ESx!:MC_F">
+                                        <field name="VAR" id="7.pqruY9D)2Vy^^Ha]R2" variabletype="">ダンスリスト</field>
+                                      </block>
+                                    </value>
                                   </block>
                                 </value>
                               </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="robohon_speak" id="iIp)hHRB|ed.meY*0T,w">
+                            <value name="WORD">
+                              <shadow type="text" id="KJ9ZyhaPAt~?hqFNp+WE">
+                                <field name="TEXT">わーい！凄いね！終ったよ！お疲れさま！明日もやろうね！</field>
+                              </shadow>
                             </value>
                           </block>
                         </next>
-                      </block>
-                    </statement>
-                    <next>
-                      <block type="robohon_speak" id="iIp)hHRB|ed.meY*0T,w">
-                        <value name="WORD">
-                          <shadow type="text" id="KJ9ZyhaPAt~?hqFNp+WE">
-                            <field name="TEXT">わーい！凄いね！終ったよ！お疲れさま！明日もやろうね！</field>
-                          </shadow>
-                        </value>
                       </block>
                     </next>
                   </block>
