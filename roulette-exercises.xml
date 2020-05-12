@@ -25,7 +25,7 @@
             <field name="VAR" id="6Sjfwg4*C4yC(6owglfA" variabletype="">ダンスリスト</field>
             <value name="VALUE">
               <block type="lists_create_with" id="l,Yoks?cw.6S%k#no{55">
-                <mutation items="3"></mutation>
+                <mutation items="4"></mutation>
                 <value name="ADD0">
                   <block type="text" id="}jz]hJp%VZ[+.WB35qEd">
                     <field name="TEXT">ロボホン体操</field>
@@ -39,6 +39,11 @@
                 <value name="ADD2">
                   <block type="text" id="0BbsV73S5+l~(nJs(}{q">
                     <field name="TEXT">ロボホンズブートキャンプ</field>
+                  </block>
+                </value>
+                <value name="ADD3">
+                  <block type="text" id="-q1JC967[{0hHM;{[S7P">
+                    <field name="TEXT">ヲタ芸</field>
                   </block>
                 </value>
               </block>
@@ -155,7 +160,7 @@
         </value>
         <next>
           <block type="controls_if" id="TyyekIy[1*F2Az{JkVtq">
-            <mutation elseif="2"></mutation>
+            <mutation elseif="3"></mutation>
             <value name="IF0">
               <block type="logic_compare" id="CI)MFl}E05x5Xd9DB?=,">
                 <field name="OP">EQ</field>
@@ -214,6 +219,26 @@
             <statement name="DO2">
               <block type="robohon_dance" id="`{;p:VU{h(uE!163CAJw">
                 <field name="DANCE">40</field>
+              </block>
+            </statement>
+            <value name="IF3">
+              <block type="logic_compare" id="p`BYuymuvZg[OSACvVOP">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="variables_get" id="`@7d8JKINeF~TGom%+#|">
+                    <field name="VAR" id="0zE9xId7?p-[o3X.JQ/{" variabletype="">_ダンス名</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="a=YZ0yEBTxcirm}g*vSp">
+                    <field name="TEXT">ヲタ芸</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO3">
+              <block type="robohon_dance" id="jYOCv/nqkA)xtdZ*Yvh[">
+                <field name="DANCE">43</field>
               </block>
             </statement>
           </block>
