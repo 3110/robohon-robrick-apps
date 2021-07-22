@@ -9,7 +9,7 @@
 
 - [ルーレット体操](https://github.com/3110/robohon-robrick-apps#%E3%83%AB%E3%83%BC%E3%83%AC%E3%83%83%E3%83%88%E4%BD%93%E6%93%8D%E3%82%A2%E3%83%97%E3%83%AAroulette-exercisesxml)（`roulette-exercises.xml`)
 
-- [「ボクと歌お」おすすめアプリ](https://github.com/3110/robohon-robrick-apps#%E3%80%8C%E3%83%9C%E3%82%AF%E3%81%A8%E6%AD%8C%E3%81%8A%E3%80%8D%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%82%A2%E3%83%97%E3%83%AAkaraoke.xml)（`karaoke.xml`）
+- [「ボクと歌お」おすすめアプリ](https://github.com/3110/robohon-robrick-apps#%E3%83%9C%E3%82%AF%E3%81%A8%E6%AD%8C%E3%81%8A%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%82%A2%E3%83%97%E3%83%AAkaraokexml)（`karaoke.xml`）
 
 ## インストール方法
 
