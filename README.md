@@ -13,7 +13,7 @@
 
 ## インストール方法
 
-- [ZIP ファイル](https://github.com/3110/robohon-robrick/archive/v0.0.9.zip)をダウンロードします。
+- [ZIP ファイル](https://github.com/3110/robohon-robrick/archive/v0.0.10.zip)をダウンロードします。
 - ダウンロードした ZIP ファイルを適当なフォルダに展開します。
 - ロボホンでロブリックアプリを起動します。  
   <a href="https://gyazo.com/4c6059c6ee7deace2185d194e2587e22"><img src="https://i.gyazo.com/4c6059c6ee7deace2185d194e2587e22.png" alt="ロブリックアプリアイコン" width="180"/></a>
