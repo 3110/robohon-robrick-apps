@@ -13,7 +13,7 @@
 
 ## インストール方法
 
-- [ZIP ファイル](https://github.com/3110/robohon-robrick/archive/v0.0.13.zip)をダウンロードします。
+- [ZIP ファイル](https://github.com/3110/robohon-robrick/archive/v0.0.14.zip)をダウンロードします。
 - ダウンロードした ZIP ファイルを適当なフォルダに展開します。
 - ロボホンでロブリックアプリを起動します。  
   <a href="https://gyazo.com/4c6059c6ee7deace2185d194e2587e22"><img src="https://i.gyazo.com/4c6059c6ee7deace2185d194e2587e22.png" alt="ロブリックアプリアイコン" width="180"/></a>
@@ -144,7 +144,7 @@
 
 [![「ボクと歌お」おすすめアプリ実行動画](https://img.youtube.com/vi/YV8MQU0aMfk/0.jpg)](https://youtu.be/YV8MQU0aMfk)
 
-「ボクと歌お」で歌える曲は 2022 年 5 月 26 日現在で 210 曲もあります。何が歌えるのか覚えてないですし，背中の画面で一覧を見るものつらいですよね。
+「ボクと歌お」で歌える曲は 2022 年 7 月 28 日現在で 220 曲もあります。何が歌えるのか覚えてないですし，背中の画面で一覧を見るものつらいですよね。
 そこで，ロボホンに歌手名や曲名を教えてもらうアプリを作りました。
 
 ### 特徴
