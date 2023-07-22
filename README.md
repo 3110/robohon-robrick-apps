@@ -6,14 +6,13 @@
 - [励ましてくれるアプリ](https://github.com/3110/robohon-robrick#%E5%8A%B1%E3%81%BE%E3%81%97%E3%81%A6%E3%81%8F%E3%82%8C%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AAencourage-me-appxml)（`encourage-me-app.xml`）
 - [うるう年を教えてくれるアプリ](https://github.com/3110/robohon-robrick#%E3%81%86%E3%82%8B%E3%81%86%E5%B9%B4%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%82%8C%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AAleap-year-appxml)（`leap-year-app.xml`）
 - [思い出アプリ](https://github.com/3110/robohon-robrick-apps/#%E6%80%9D%E3%81%84%E5%87%BA%E3%82%A2%E3%83%97%E3%83%AAmemories-appxml)(`memories-app.xml`)
-
 - [ルーレット体操](https://github.com/3110/robohon-robrick-apps#%E3%83%AB%E3%83%BC%E3%83%AC%E3%83%83%E3%83%88%E4%BD%93%E6%93%8D%E3%82%A2%E3%83%97%E3%83%AAroulette-exercisesxml)（`roulette-exercises.xml`)
 
-- [「ボクと歌お」おすすめアプリ](https://github.com/3110/robohon-robrick-apps#%E3%83%9C%E3%82%AF%E3%81%A8%E6%AD%8C%E3%81%8A%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%82%A2%E3%83%97%E3%83%AAkaraokexml)（`karaoke.xml`）
+※「ボクと歌お」おすすめアプリは[https://github.com/3110/robrick-karaoke-curator/](https://github.com/3110/robrick-karaoke-curator/)に移動しました。
 
 ## インストール方法
 
-- [ZIP ファイル](https://github.com/3110/robohon-robrick/archive/v0.0.19.zip)をダウンロードします。
+- [ZIP ファイル](https://github.com/3110/robohon-robrick/archive/v0.0.20.zip)をダウンロードします。
 - ダウンロードした ZIP ファイルを適当なフォルダに展開します。
 - ロボホンでロブリックアプリを起動します。  
   <a href="https://gyazo.com/4c6059c6ee7deace2185d194e2587e22"><img src="https://i.gyazo.com/4c6059c6ee7deace2185d194e2587e22.png" alt="ロブリックアプリアイコン" width="180"/></a>
@@ -36,15 +35,6 @@
   <a href="https://gyazo.com/03ee151ce2e646ee79d52c9491301bd2"><img src="https://i.gyazo.com/03ee151ce2e646ee79d52c9491301bd2.png" alt="保存完了" width="800"/></a>
 
 ## 実行方法
-
-### 「ボクと歌お」おすすめアプリ（待ち受け起動）
-
-待ち受け起動（指定したキーワードをロボホンが聞いたら，その言葉に紐付いたロブリックのアプリを起動する）については，[利用マニュアルの 45 ページ](https://robohon.com/apps/robrick/robrick-manual_v1-3-0.pdf#page=45)を参照してください。
-
-- ロボホンが待ち受け状態（ロブリックやロブリック実行を含め，他のアプリが起動していない状態）なのを確認し，ロボホンに向かって「カラオケを教えて」と話しかけます。
-- ロブリック実行アプリが起動し，「ボクと歌お」おすすめアプリが自動的に実行します。
-
-### それ以外のアプリ
 
 - ロボホンの画面で「ロブリック実行」アプリを起動します。  
   <a href="https://gyazo.com/4c6059c6ee7deace2185d194e2587e22"><img src="https://i.gyazo.com/4c6059c6ee7deace2185d194e2587e22.png" alt="ロブリックアプリアイコン" width="180"/></a>
@@ -139,23 +129,3 @@
 
 - 踊れる体操を増やしてみましょう。
 - 繰り返す回数を変更してみましょう。
-
-## 「ボクと歌お」おすすめアプリ（`karaoke.xml`）
-
-[![「ボクと歌お」おすすめアプリ実行動画](https://img.youtube.com/vi/YV8MQU0aMfk/0.jpg)](https://youtu.be/YV8MQU0aMfk)
-
-「ボクと歌お」で歌える曲は 2023 年 5 月 25 日現在で 270 曲もあります。何が歌えるのか覚えてないですし，背中の画面で一覧を見るものつらいですよね。
-そこで，ロボホンに歌手名や曲名を教えてもらうアプリを作りました。
-
-### 特徴
-
-- 「カラオケを教えて」と言うと，「ボクと歌お」で歌える曲の中からランダムに 1 曲おすすめしてくれます。
-- 一度おすすめした曲は全部おすすめするまで再度おすすめすることはありません。
-- このアプリでおすすめの曲を聞いた後，「カラオケを起動して」と言うと「ボクと歌お」アプリを起動できます。ロボホンが教えてくれた歌手名や曲名を言うと，その歌を歌ってくれます。
-
-### カスタマイズ
-
-- 待ち受け起動のキーワードを変えてみましょう。例えば，「おすすめを教えて」と聞いたら起動するようにしてみましょう。
-- 「ボクと歌お」に新しい曲が追加されたら，自分で新しい曲を追加してみましょう。曲を追加したら，「バージョン」変数のバージョンを変更してロボホンに送信することで，今まで覚えていた曲名のリストをクリアして，新しいリストを設定します。
-- 曲名や歌手名はそのままだとちゃんと発話できないものがたくさんあります。「発話辞書」関数で設定している連想配列にちゃんと発話できるように辞書を追加してみましょう。  
-  ※発話辞書の仕様により，同じ曲名や歌手名で読み方が複数ある場合，後から登録した方が有効になります。
